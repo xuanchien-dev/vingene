@@ -42,7 +42,9 @@
     padding-top:30px;
     padding-bottom: 30px;
 }
-
+.info-vingene h4, .info-vingene p{
+    color:white;
+}
 .info-vingene:before{
     content: '';
  width:100%;
@@ -89,7 +91,9 @@ z-index: -1;
 .info2-vingene .info-box h3{
     margin-bottom:25px;
 }
-
+.info2-vingene h2, .info2-vingene h3{
+    color:white;
+}
 /* TAI LIEU LIEN QUAN */
 .document-service{
     padding-top:75px;
@@ -121,8 +125,9 @@ z-index: -1;
     padding-bottom:30px;
 }
 .document-service .do-items .document-item ul li a{
-    color:#2D2D2D;
-    font-weight: 500;
+    color: #2D2D2D;
+    font-weight: 600;
+    font-family: light;
 }
 .document-service .do-items .document-item ul li a:hover{
     text-decoration: none;
