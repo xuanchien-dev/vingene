@@ -4,7 +4,6 @@
 @import url(css/animate.css);
 @import url(css/default-assets/header-foote.css);
 @import url(css/owl.carousel.min.css);
-@import url(css/magnific-popup.css);
 @import url(css/font-awesome.min.css);
 @import url(css/style.css);
 @import url(css/reponsive.css);
@@ -179,7 +178,9 @@ input:focus {
 .mt-15 {
     margin-top: 15px;
 }
-
+.mt-20{
+    margin-top: 20px;
+}
 .mt-30 {
     margin-top: 30px;
 }

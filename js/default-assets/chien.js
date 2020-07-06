@@ -66,22 +66,6 @@
         });
     }
 
-
-    // *********************************
-    // :: 8.0 Magnific Popup Active Code
-    // *********************************
-    if ($.fn.magnificPopup) {
-        $('.video-play-btn').magnificPopup({
-            type: 'iframe'
-        });
-        $('.thumbnail-zoom').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true
-            }
-        });
-    }
-
     // **************************
     // :: 9.0 Tooltip Active Code
     // **************************
@@ -143,6 +127,37 @@
 
 
 })(jQuery);
+
+$('.box-slide-ctkt').owlCarousel({
+      loop:true,
+      autoplay:true,
+      // navText: ["<img src='img/left-arow.png'>","<img src='img/right-arow.png'>"],
+      nav:true,
+      dots:true,
+      autoplayHoverPause: true,
+      autoplaySpeed: 700,
+      margin:20, 
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      smartSpeed: 1000,
+      responsive:{
+          0:{
+              items:1,
+          },
+          767:{
+              items:2,
+          },
+          992:{
+              items:3,
+          },
+          1200:{
+              items:3,
+          },
+          1600:{
+              items:3,
+          }
+      }
+    }); /*slide dia chi xet nhiem*/
 
 
   $('.box-slide').owlCarousel({
