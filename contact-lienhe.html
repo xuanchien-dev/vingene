@@ -7,16 +7,96 @@
         <meta name="keywords" content="" />
         <title>Vingene</title>
         <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="js/custom-tr.js"></script>
+
 
 
 </head>
 <body>
+<header class="wow fadeInDown">
+    <div class="main-header-area wow fadeInDown">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container-fluid">
+                <div class="top-header-area">
+                    <div class="h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-1"></div>
+                            <div class="">
+                                <div class="top-header-content text-right">
+                                    <div class="dc-address">
+                                        <a href="" title="" class="btn dc-top active">Địa chỉ xét nhiệm</a>
+                                    </div>
+                                </div>
+                            </div>
 
-<!--HEADER-->
-<div class="header-img">
-    <img src="img/imgchange/headerimg.png" class="demo">
-</div>
+                            <div class="">
+                                <div class="kq-xn">
+                                    <a href="" title="" class="btn dc-top2">Kết quả xét nhiệm</a>
+                                </div>
+                            </div>
+
+                            <div class=" form-top">
+                                <div id="custom-search-input">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="search-query form-control f-search" placeholder="Tìm kiếm"  />
+                                        <div class="input-group-btn">
+                                            <button class="btn" type="supmit" data-toggle="modal" data-target="#Modal-search">
+                                                <span class="fa fa-search"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="" style="display: flex;">
+                                <img src="img/vn.png" alt="" />
+                                <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
+                                    <select class="tech" name="tech" id="tech">
+                                        <option value="VN" data-image="img/us.png">VN</option>
+                                        <option value="US" data-image="img/vn.png">US</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="classy-navbar justify-content-between" id="vingeneNav">
+                    <a class="nav-brand" href="index.html"><img src="./img/logo.png" alt="" /></a>
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <div class="classy-menu">
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+                        <div class="classynav">
+                            <ul id="nav">
+                                <li class="active"><a href="">Trang chủ</a></li>
+                                <li>
+                                    <a href="#">Về chúng tôi</a>
+                                </li>
+                                <li><a href="">Dịch vụ</a></li>
+                                <li><a href="">Bảng giá</a></li>
+                                <li><a href="">Kiến thức</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                            </ul>
+
+                            <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
+                                <a href="#" class="btn vingene-btn dky-top">Đăng kí Dịch Vụ</a>
+                            </div>
+                        </div>
+
+                        <!-- Nav End -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Area End -->
+
 
 <!--MAP-->
 <div class="maps">
@@ -26,7 +106,7 @@
 <!--LIEN HE-->
 <div class="contact-us">
     <div class="container">
-        <div class="row">
+        <div class="row wow fadeInUp">
             <div class="col-md-6">
                 <div class="banner-text-item text-light text-lg-left text-center">
 
@@ -40,12 +120,18 @@
                     <input type="text" placeholder="Họ và tên" class="full-width">
                     <input type="text" placeholder="Số điện thoại" class="part-width">
                     <input type="text" placeholder="Email" class="part-width no-margin">
-                    <select name="choose-service" id="choose-service" class="choose-service">
-                        <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
-                        <option value="s2" class="choose-option">Gói 01</option>
-                        <option value="s3" class="choose-option">Gói Plus</option>
-                        <option value="s4" class="choose-option">Gói Pro</option>
-                    </select>
+                    <div class="fix-icon">
+                        <select name="choose-service" id="choose-service" class="choose-service">
+                            <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
+                            <option value="s2" class="choose-option">Gói 01</option>
+                            <option value="s3" class="choose-option">Gói Plus</option>
+                            <option value="s4" class="choose-option">Gói Pro</option>
+                        </select>
+                     <!--   <i class="fal fa-long-arrow-down"></i>-->
+                    </div>
+
+
+
                     <input type="text" placeholder="Nội dung" class="full-width message">
                     <button type="button" class="btn btn-service">Gửi đi<img src="img/imgchange/guidi.png"> </button>
                 </div>
@@ -104,19 +190,241 @@
     </div>
 </div>
 
+<section class="out-address mt-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="about-us-content mb-30 why-content box-out-address">
+                    <h5>Our testing address</h5>
+                    <h2>Địa chỉ xét nghiệm</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="box-slide owl-carousel owl-theme">
+                    <div class="box-slide-l">
+                        <h3>
+                            Chi nhánh xét nghiệm Thanh Xuân
+                        </h3>
+                        <div class="desc-slide-address">
+                            <p>
+                                <span>Địa chỉ:</span>
+                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
+                            </p>
+                            <p>
+                                <span>Email:</span>
+                                <span>Chinhanhxetnghiem@vingene.vn</span>
+                            </p>
+                            <p>
+                                <span>Hotline:</span>
+                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-slide-l">
+                        <h3>
+                            Chi nhánh xét nghiệm Long biên
+                        </h3>
+                        <div class="desc-slide-address">
+                            <p>
+                                <span>Địa chỉ:</span>
+                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
+                            </p>
+                            <p>
+                                <span>Email:</span>
+                                <span>Chinhanhxetnghiem@vingene.vn</span>
+                            </p>
+                            <p>
+                                <span>Hotline:</span>
+                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box-slide-l">
+                        <h3>
+                            Chi nhánh xét nghiệm Thanh Xuân
+                        </h3>
+                        <div class="desc-slide-address">
+                            <p>
+                                <span>Địa chỉ:</span>
+                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
+                            </p>
+                            <p>
+                                <span>Email:</span>
+                                <span>Chinhanhxetnghiem@vingene.vn</span>
+                            </p>
+                            <p>
+                                <span>Hotline:</span>
+                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-slide-l">
+                        <h3>
+                            Chi nhánh xét nghiệm Long biên
+                        </h3>
+                        <div class="desc-slide-address">
+                            <p>
+                                <span>Địa chỉ:</span>
+                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
+                            </p>
+                            <p>
+                                <span>Email:</span>
+                                <span>Chinhanhxetnghiem@vingene.vn</span>
+                            </p>
+                            <p>
+                                <span>Hotline:</span>
+                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box-slide-l">
+                        <h3>
+                            Chi nhánh xét nghiệm Thanh Xuân
+                        </h3>
+                        <div class="desc-slide-address">
+                            <p>
+                                <span>Địa chỉ:</span>
+                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
+                            </p>
+                            <p>
+                                <span>Email:</span>
+                                <span>Chinhanhxetnghiem@vingene.vn</span>
+                            </p>
+                            <p>
+                                <span>Hotline:</span>
+                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box-slide-l">
+                        <h3>
+                            Chi nhánh xét nghiệm Long biên
+                        </h3>
+                        <div class="desc-slide-address">
+                            <p>
+                                <span>Địa chỉ:</span>
+                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
+                            </p>
+                            <p>
+                                <span>Email:</span>
+                                <span>Chinhanhxetnghiem@vingene.vn</span>
+                            </p>
+                            <p>
+                                <span>Hotline:</span>
+                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
 
+<footer class="footer-area pdt-35">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12 col-sm-4 col-md-4">
+                <div class="single-footer-widget mb-80">
+                    <!-- Footer Logo -->
+                    <a href="#" class="footer-logo">
+                        <img src="img/logo.png" alt="" />
+                    </a>
 
+                    <div class="mb-30">
+                        <div class="desc-footer">
+                            <div class="d-flex">
+                                <img src="img/call.png" alt="" width="22px;" height="22px;" />
+                                <p>
+                                    <span>Địa chỉ:</span>
+                                    <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
+                                </p>
+                            </div>
+                            <div class="d-flex">
+                                <img src="img/call.png" alt="" width="22px;" height="22px;" />
+                                <p>
+                                    <span>Điện thoại:</span>
+                                    <span> 0439336288</span>
+                                </p>
+                            </div>
+                            <div class="d-flex">
+                                <img src="img/icon-fax.png" alt="" width="22px;" height="22px;" />
+                                <p>
+                                    <span>Fax: </span>
+                                    <span>04 3933 6293</span>
+                                </p>
+                            </div>
+                            <div class="d-flex">
+                                <img src="img/icon-email.png" alt="" width="22px;" height="22px;" />
+                                <p>
+                                    <span>Email:</span>
+                                    <span>info@vingene.vn</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<footer>
-    <img src="img/imgchange/footer.png" class="demo">
+            <div class="col-12 col-sm-6 col-md-2 col-xl-2 push-2">
+                <div class="single-footer-widget mb-80 mt-42">
+                    <div class="open-time">
+                        <ul>
+                            <li>
+                                <a href="" class="active">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="" title="">Dịch vụ của chúng tôi</a>
+                            </li>
+                            <li>
+                                <a href="" title="">Đăng kí dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="" title="">Bảng giá</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Footer Widget -->
+            <div class="col-12 col-md-4 col-xl-4">
+                <div class="single-footer-widget mb- mt-42">
+                    <h4 class="widget-title">BẢN ĐỒ</h4>
+                    <div class="contact-address">
+                        <img src="img/map.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <div class="desc-ft">
+                        <p>All rights reserved.</p>
+                        <a href="" title=""> Powered by SaoKim</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+<!-- Footer Area End -->
  <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/vingene.bundle.js"></script>
         <script src="js/default-assets/chien.js"></script>
+        <script src="js/default-assets/custom-tr.js"></script>
+
 </body>
 </html>

@@ -24,6 +24,7 @@
 }
 .contact-form input::placeholder {
     color: #106A3F;
+    font-weight: lighter !important;
 }
 .contact-form input:focus{
     outline: none;
@@ -75,7 +76,23 @@
 .contact-us .choose-service .choose-option{
     margin-bottom: 15px;
 }
-
+.contact-us .contact-form .choose-service{
+    position: relative;
+}
+.contact-us .contact-form .choose-service:before{
+    content: url("../../img/imgchange/tick.png");
+    position: absolute;
+}
+/*
+.choose-service:before{
+    content: '\f175';
+    font-family: FontAwesome;
+}
+.contact-form i:before{
+    content: '\f175';
+    font-family: FontAwesome;
+    font-style: initial;
+}*/
 .contact-us .address-box{
     background-image: url('../../img/imgchange/contactus.png');
     background-size: cover;
@@ -120,6 +137,9 @@
     width:50%;
     float:left;
 }
+.contact-us h4, .contact-us p{
+    color:white;
+}
 .contact-icon{
         float: left;
     margin-right: 30px;
@@ -132,6 +152,7 @@
 }
 .contact-text p{
     margin:0;
+    color:white;
 }
 .contact-us hr{
     background-color:#fff;
@@ -143,7 +164,9 @@
     padding-bottom: 15%;
 }
 
-
+.dropdown-content{
+    display: none;
+}
 
 
 

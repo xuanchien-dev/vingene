@@ -65,8 +65,10 @@
 
 /*QUY TRINH XET NGHIEM : TEST*/
 .test-dervice .test-box p{
-    padding-left:30px;
-    padding-right:30px;
+    padding-left: 30px;
+    color: #2D2D2D;
+    padding-right: 30px;
+    margin-top: 15px;
 }
 .test-box-item{
     display: flex;
