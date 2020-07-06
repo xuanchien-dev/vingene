@@ -1,0 +1,18 @@
+.btn-service img{
+    width:24px;
+    margin-left:6px;
+}
+.btn-service{
+    font-size: 14px;
+    color: #fff;
+    background-color: #056839;
+    background-image: url("../../img/imgchange/bgbutton.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12px 22px;
+    border-radius: 100px;
+}
+.address-service{
+    padding-top: 5%;
+    padding-bottom: 2%;
+}

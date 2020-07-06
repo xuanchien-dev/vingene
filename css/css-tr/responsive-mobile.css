@@ -1,0 +1,16 @@
+@media screen and (max-width: 576px){
+    .test-box-item .test-img{
+        display: none;
+    }
+    .service-us-content{
+        padding-left:15px;
+       margin-left:0;
+    }
+    h2, .test-dervice .title-color h2{
+        font-size: 24px;
+    }
+    .test-dervice .test-box p{
+        padding:0;
+    }
+
+}

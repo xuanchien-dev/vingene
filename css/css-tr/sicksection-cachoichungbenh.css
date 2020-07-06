@@ -1,0 +1,87 @@
+.sick-service{
+    padding-top:46px;
+    padding-bottom: 46px;
+}
+.content-box-focus{
+   display: none;
+}
+.sick-service .box-item .box-item-default{
+    display: inline-flex;
+    padding-left: 30px;
+    padding-top: 34px;
+    padding-bottom: 22px;
+    border: 1px solid #6B9A82;
+    border-radius: 11px;
+    padding-right: 30px;
+
+}
+.sick-service .box-item{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.sick-service .box-item .box-item-default:hover{
+    box-shadow: 0px 3px 15px #00000026;
+    transition: 0.3s;
+    border:none;
+}
+.sick-service .box-item .box-item-default:hover .content-box-default{
+  display:none;
+}
+.sick-service .box-item .box-item-default:hover .content-box-focus{
+    display:block;
+}
+.sick-service .box-item .box-item-default .content-box-default, .sick-service .box-item .box-item-default .content-box-focus{
+   margin-left: 30px;
+}
+.sick-service .box-item .box-item-default .content-box-default h3,.sick-service .box-item .box-item-default .content-box-focus h3{
+    font-size: 16px;
+}
+.sick-service .box-item .box-item-default .content-box-default p, .sick-service .box-item .box-item-default .content-box-focus p{
+    font-size: 14px;
+}
+.sick-service .box-item .box-item-default span{
+    width:30px;
+    height:34px;
+    position: relative;
+    margin-top:20px;
+    margin-left: 15px;
+}
+.sick-service .box-item .box-item-default span:before{
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #EEFAE7;
+    z-index: -1;
+    left: -59%;
+    top: -37%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

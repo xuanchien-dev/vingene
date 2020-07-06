@@ -1,0 +1,153 @@
+.service-advisory{
+    padding-top: 75px;
+    padding-bottom: 60px;
+}
+
+.service-advisory .ad-left p, .service-advisory .ad-right p{
+    font-size: 14px;
+}
+.service-advisory .ad-right .p-color{
+    font-size: 16px;
+    color: #056839;
+}
+.service-advisory video{
+    width:100%;
+}
+.service-advisory .service-advisory-button{
+    margin-top:42px;
+}
+.service-advisory .service-advisory-button .btn-ad-service img{
+    width:20px;
+}
+.service-advisory .service-advisory-button .btn-ad-service{
+    background-color: #056839;
+    color: #fff;
+    background-image: url(../../img/imgchange/bgbutton.png);
+    background-size: cover;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    font-size: 15px;
+}
+
+/* THONG TIN VE VINGENE */
+.info-vingene{
+    background-image: url(../../img/imgchange/chitiet1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+.info-vingene:before{
+    content: '';
+ width:100%;
+    height:100%;
+    background-color:#22744bd9;
+    position: absolute;
+    top:0;
+
+}
+.info-vingene .info-box img{
+    margin-bottom: 20px;
+}
+/* test banner */
+.test-banner{
+    background-image: url(../../img/imgchange/chitiet2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top:66px;
+    padding-bottom: 60px;
+}
+
+.test-banner:before{
+    content: '';
+    width:100%;
+    height:100%;
+    background-color:#ffffffbf;
+    position: absolute;
+    top:0;
+z-index: -1;
+}
+.test-banner h2{
+    font-size: 30px;
+    color: #056839;
+}
+.test-banner p{
+    color: #6D6D6D;
+}
+/* info2-vingene  */
+.info2-vingene{
+    padding-top:56px;
+    padding-bottom: 52px;
+}
+.info2-vingene .info-box h3{
+    margin-bottom:25px;
+}
+
+/* TAI LIEU LIEN QUAN */
+.document-service{
+    padding-top:75px;
+    padding-bottom:36px;
+}
+.document-service .title-color h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.document-service .title-color h2 p{
+    margin-bottom: 30px;
+    font-size:14px;
+}
+.document-service .do-items .document-item{
+    float:left;
+}
+.document-service .do-items .document-item ul li img{
+    width: 24px;
+    margin-right: 30px;
+}
+.document-service .do-items .document-item ul li{
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+.document-service .do-items {
+    border-top: 4px solid #22744B;
+    padding-top: 30px;
+    background-color: #2d2d2d12;
+    padding-bottom:30px;
+}
+.document-service .do-items .document-item ul li a{
+    color:#2D2D2D;
+    font-weight: 500;
+}
+.document-service .do-items .document-item ul li a:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
