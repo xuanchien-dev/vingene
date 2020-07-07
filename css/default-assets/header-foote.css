@@ -1,10 +1,24 @@
 
 /* Base CSS header */
+.classy-menu.menu-on:before{
+ content: "";
+ float: left;
+ width: 50%;
+ height: 40px;
+ margin-top: 18px;
+ margin-right: 5px;
+ margin-left: 20px;
+ background: url(../../img/logo.png) no-repeat 0 0;
+ background-size: 80%;
+}
 ul {
   margin: 0;
 }
 ul li {
   list-style: none;
+}
+.classynav{
+  margin-top: 7px !important;
 }
 img {
   height: auto;
@@ -47,8 +61,15 @@ img {
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
-    height: 89px;
+    height: auto;
     background-color: #fff;
+}
+.d-mb-none{
+        display: block;
+    }
+
+.d-mb-block{
+  display: none;
 }
 .header-area {
     position: relative;
@@ -59,7 +80,6 @@ img {
     transition-duration: 500ms;
     box-shadow: 0px 3px 15px #00000030;
     height: 0px;
-
 }
 
 .dc-address, .kq-xn{
@@ -98,9 +118,7 @@ a.btn.dc-top, a.btn.dc-top2{
     margin-left: 28%;
     padding-top: 10px;
 }
-.btn.dc-top.active{
-    border: 1px solid #8CC63F;
-}
+
 .btn.dc-top2{
     padding-left: 0px !important;
 } 
@@ -166,7 +184,7 @@ a.btn.dc-top:before{
 }
 .classy-nav-container .classy-navbar .classynav ul li a {
     font-size: 14px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: #056839;
     font-family:SemiBold;
 }
@@ -219,7 +237,7 @@ a.btn.dc-top:before{
     height: 3px;
     background-color: #056839;
     position: absolute;
-    bottom: -13px;
+    bottom: -9px;
     left: 10%;
     z-index: 1;
     content: "";
@@ -296,7 +314,7 @@ a.btn.dc-top:before{
 .classynav ul li {
   display: inline-block;
   clear: both;
-  margin: 0px 30px;
+  margin: 0px 25px;
   position: inherit;
   z-index: 10;
 }
@@ -554,6 +572,8 @@ a.btn.dc-top:before{
   -ms-grid-row-align: center;
   align-items: center;
 }
+
+.classynav {}
 .breakpoint-off .classynav ul li .dropdown {
   width: 180px;
   position: absolute;
@@ -914,7 +934,9 @@ a.btn.dc-top:before{
 }
 .desc-ft{
   display: inline-flex;
-  margin-top: 15px;
+  margin-top: 10px;
+  height: 20px;
+  margin-bottom: 10px;
 }
 .copy-right{
   border-top: 1px solid #056839; 
