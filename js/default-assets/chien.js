@@ -168,7 +168,7 @@ $('.box-slide-ctkt').owlCarousel({
       dots:true,
       autoplayHoverPause: true,
       autoplaySpeed: 700,
-      margin:20, 
+      // margin:20, 
       animateOut: 'fadeOut',
       animateIn: 'fadeIn',
       smartSpeed: 1000,

@@ -8,6 +8,8 @@
 @import url(css/style.css);
 @import url(css/reponsive.css);
 @import url(css/owl-theme-default-min.css);
+@import url(css/hotline.css);
+@import url(css/chien.css);
 @import url(css/css-tr/address-service-diachixetnghiem.css);
 @import url(css/css-tr/banggia.css);
 @import url(css/css-tr/banner.css);
@@ -17,7 +19,7 @@
 @import url(css/css-tr/responsive-mobile.css);
 @import url(css/css-tr/service-advisory-chitietdichvu.css);
 @import url(css/css-tr/sicksection-cachoichungbenh.css);
-@import url(css/chien.css);
+
 /* :: 1.0 Reboot CSS */
 * {
     margin: 0;

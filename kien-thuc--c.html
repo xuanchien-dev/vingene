@@ -13,15 +13,15 @@
         <div id="preloader">
             <div class="loader"></div>
         </div>
-        <header class="header-area wow fadeInDown">
+       <header class="header-area wow fadeInDown">
             <div class="main-header-area wow fadeInDown">
-                <div class="classy-nav-container breakpoint-off bg-white">
+                <div class="classy-nav-container breakpoint-off">
                     <div class="container-fluid">
                         <div class="top-header-area">
                             <div class="h-100">
                                 <div class="row h-100 align-items-center">
                                     <div class="col-1"></div>
-                                    <div class="">
+                                    <div class="d-none d-md-block">
                                         <div class="top-header-content text-right">
                                             <div class="dc-address">
                                                 <a href="" title="" class="btn dc-top active">Địa chỉ xét nhiệm</a>
@@ -29,18 +29,18 @@
                                         </div>
                                     </div>
 
-                                    <div class="">
+                                    <div class="d-none d-md-block">
                                         <div class="kq-xn">
                                             <a href="" title="" class="btn dc-top2">Kết quả xét nhiệm</a>
                                         </div>
                                     </div>
 
-                                    <div class=" form-top">
+                                    <div class=" form-top d-none d-md-block">
                                         <div id="custom-search-input">
                                             <div class="input-group col-md-12">
                                                 <input type="text" class="search-query form-control f-search" placeholder="Tìm kiếm"  />
                                                 <div class="input-group-btn">
-                                                    <button class="btn" type="supmit" data-toggle="modal" data-target="#Modal-search">
+                                                    <button class="btn" type="supmit" >
                                                         <span class="fa fa-search"></span>
                                                     </button>
                                                 </div>
@@ -87,6 +87,18 @@
                                     <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
                                         <a href="#" class="btn vingene-btn dky-top">Đăng kí Dịch Vụ</a>
                                     </div>
+                                    <div class=" form-top d-md-none d-block">
+                                        <div id="custom-search-input">
+                                            <div class="input-group col-md-12">
+                                                <input type="text" class="search-query form-control f-search" placeholder="Tìm kiếm"  />
+                                                <div class="input-group-btn">
+                                                    <button class="btn" type="supmit" >
+                                                        <span class="fa fa-search"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <!-- Nav End -->
@@ -128,14 +140,23 @@
         <section class="vingene-portfolio clearfix">
             <div class="container">
                 <div class="row wow fadeInUp">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu-tab-kt">
-                        <ul class="nav nav-tabs no-bd no-float">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 menu-tab-kt d-none d-md-block">
+                        <ul class="nav nav-tabs no-bd no-float ">
                             <li class="active"><a data-toggle="tab" href="#home">Kiến thức chung &emsp;  &emsp;|</a> </li>
                             <li><a data-toggle="tab" href="#menu1" class="active">Kiến thức ADN &emsp; &emsp;| </a></li>
                             <li><a data-toggle="tab" href="#menu2">Phân tích di truyền &emsp; &emsp;|</a></li>
                             <li><a data-toggle="tab" href="#menu3">Ý kiến chuyên gia &emsp; &emsp;| </a></li>
                             <li><a data-toggle="tab" href="#menu4">Kiến thức thai kì</a></li>
                         </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d-md-none d-block ">
+                        <select name="favorites" class="favorites-select top">
+                            <option value="kt">Kiến thức chung</option>
+                            <option value="ktadn">Kiến thức ADN</option>
+                            <option selected value="pt">Phân tích di truyền</option>
+                            <option value="yk">Ý kiến chuyên gia</option>
+                            <option value="kttn">Kiến thức thai kì</option>
+                        </select>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="tab-content">
