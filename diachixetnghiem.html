@@ -14,6 +14,7 @@
 </head>
 <body>
 
+
 <header class="wow fadeInDown">
     <div class="main-header-area wow fadeInDown">
         <div class="classy-nav-container breakpoint-off">
@@ -32,7 +33,45 @@
 
                             <div class="">
                                 <div class="kq-xn">
-                                    <a href="" title="" class="btn dc-top2">Kết quả xét nhiệm</a>
+                                    <a href="" title="" class="btn dc-top2" data-toggle="modal" data-target="#modalvd" >Kết quả xét nhiệm</a>
+
+                                    <div class="phieuketqua" id="phieuketqua">
+                                        <div class="title-phieuketqua">
+                                            <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
+
+                                            <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
+
+                                        </div>
+                                        <div class="content-phieuketqua">
+                                            <div class="item-content">
+                                                <strong>Họ và tên</strong>
+                                                <p>Nguyễn Thị Hà</p>
+                                            </div>
+
+                                            <div class="item-content">
+                                                <strong>Mã dịch vụ</strong>
+                                                <p>AAAAAAAAAA</p>
+                                            </div>
+                                            <div class="item-content">
+                                                <strong>Ngày sinh</strong>
+                                                <p>20/05/1980</p>
+                                            </div>
+                                            <div class="item-content">
+                                                <strong>Địa chỉ</strong>
+                                                <p>Địa chỉ</p>
+                                            </div>
+                                            <div class="item-content">
+                                                <strong>Kết quả</strong>
+                                                <p>Không phát hiện bất thường</p>
+                                            </div>
+                                        </div>
+                                        <div class="button-bottom">
+                                            <button type="button" class="btn btn-service">Chi tiết kết quả xét nghiệm<img src="img/imgchange/ketqua.png"> </button>
+
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
 
@@ -86,7 +125,7 @@
                             </ul>
 
                             <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
-                                <a href="#" class="btn vingene-btn dky-top">Đăng kí Dịch Vụ</a>
+                                <a href="#" class="btn vingene-btn dky-top"  data-toggle="modal" data-target="#popupdangkidichvu">Đăng kí Dịch Vụ</a>
                             </div>
                         </div>
 
@@ -97,6 +136,100 @@
         </div>
     </div>
 </header>
+
+<!--Modal: modalYT-->
+<div class="modal fade" id="modalvd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <!--Content-->
+        <div class="phieuketqua">
+            <div class="title-phieuketqua">
+                <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
+
+                <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
+
+            </div>
+            <div class="content-phieuketqua">
+                <div class="item-content">
+                    <strong>Họ và tên</strong>
+                    <p>Nguyễn Thị Hà</p>
+                </div>
+
+                <div class="item-content">
+                    <strong>Mã dịch vụ</strong>
+                    <p>AAAAAAAAAA</p>
+                </div>
+                <div class="item-content">
+                    <strong>Ngày sinh</strong>
+                    <p>20/05/1980</p>
+                </div>
+                <div class="item-content">
+                    <strong>Địa chỉ</strong>
+                    <p>Địa chỉ</p>
+                </div>
+                <div class="item-content">
+                    <strong>Kết quả</strong>
+                    <p>Không phát hiện bất thường</p>
+                </div>
+            </div>
+            <div class="button-bottom">
+                <button type="button" class="btn btn-service">Chi tiết kết quả xét nghiệm<img src="img/imgchange/ketqua.png"> </button>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+
+<!--popup dang ki dich vu-->
+
+<!--Modal: modalYT-->
+<div class="modal fade" id="popupdangkidichvu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <!--Content-->
+
+        <div class="phieuketqua dangki" id="dangkidichvu">
+            <div class="title-phieuketqua title-dangki">
+                <h3>ĐĂNG KÍ XÉT NGHIỆM</h3>
+
+                <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
+
+            </div>
+
+            <div class="contact-us form-dangkixetnghiem">
+
+                <div class="contact-form">
+                    <input type="text" placeholder="Họ và tên" class="full-width">
+                    <input type="text" placeholder="Số điện thoại" class="part-width">
+                    <input type="text" placeholder="Email" class="part-width no-margin">
+                    <input type="text" placeholder="dd/mm/yy" class="part-width calendar">
+                    <input type="text" placeholder="Khu vực" class="part-width no-margin address">
+                    <div class="fix-icon">
+                        <select name="choose-service" id="choose-service" class="choose-service">
+                            <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
+                            <option value="s2" class="choose-option">Gói 01</option>
+                            <option value="s3" class="choose-option">Gói Plus</option>
+                            <option value="s4" class="choose-option">Gói Pro</option>
+                        </select>
+                        <!--   <i class="fal fa-long-arrow-down"></i>-->
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+            <div class="button-bottom button-dangkixetnghiem">
+                <button type="button" class="btn btn-service">Đăng kí<img src="img/imgchange/guidi.png"> </button>
+                <button type="button" class="btn btn-clear">Làm lại<img src="img/imgchange/lamlai.png"></button>
+            </div>
+        </div>
+
+        <!--/.Content-->
+    </div>
+</div>
+
+
 <!-- Header Area End -->
 <!--DIA CHI XET NGHIEM-->
 
