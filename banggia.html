@@ -140,6 +140,7 @@
 <div class="modal fade" id="modalvd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <!--Content-->
+
         <div class="phieuketqua">
             <div class="title-phieuketqua">
                 <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
@@ -147,34 +148,44 @@
                 <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
 
             </div>
-            <div class="content-phieuketqua">
-                <div class="item-content">
-                    <strong>Họ và tên</strong>
-                    <p>Nguyễn Thị Hà</p>
-                </div>
 
-                <div class="item-content">
-                    <strong>Mã dịch vụ</strong>
-                    <p>AAAAAAAAAA</p>
-                </div>
-                <div class="item-content">
-                    <strong>Ngày sinh</strong>
-                    <p>20/05/1980</p>
-                </div>
-                <div class="item-content">
-                    <strong>Địa chỉ</strong>
-                    <p>Địa chỉ</p>
-                </div>
-                <div class="item-content">
-                    <strong>Kết quả</strong>
-                    <p>Không phát hiện bất thường</p>
-                </div>
+            <div class="content-phieuketqua">
+                <table border="0">
+                    <tr class="item-content">
+                        <th><strong>Họ và tên</strong></th>
+                        <td><p>Nguyễn Thị Hà</p></td>
+                    </tr>
+                    <tr class="item-content">
+                        <th> <strong>Ngày sinh</strong></th>
+                        <td> <p>20/05/1980</p></td>
+                    </tr>
+                    <tr class="item-content">
+                        <th> <strong>Kết quả</strong></th>
+                        <td> <p>Không phát hiện bất thường</p></td>
+                    </tr>
+
+                </table>
+                <table border="0">
+                    <tr class="item-content">
+                        <th> <strong>Mã dịch vụ</strong></th>
+                        <td> <p>AAAAAAAAAA</p></td>
+                    </tr>
+                    <tr class="item-content">
+                        <th><strong>Địa chỉ</strong></th>
+                        <td> <p>Thanh Xuân</p></td>
+                    </tr>
+
+
+                </table>
+
             </div>
             <div class="button-bottom">
                 <button type="button" class="btn btn-service">Chi tiết kết quả xét nghiệm<img src="img/imgchange/ketqua.png"> </button>
 
             </div>
         </div>
+
+
         <!--/.Content-->
     </div>
 </div>
@@ -200,16 +211,26 @@
                     <input type="text" placeholder="Họ và tên" class="full-width">
                     <input type="text" placeholder="Số điện thoại" class="part-width">
                     <input type="text" placeholder="Email" class="part-width no-margin">
-                    <input type="text" placeholder="dd/mm/yy" class="part-width calendar">
-                    <input type="text" placeholder="Khu vực" class="part-width no-margin address">
+                    <span class="icon-dangki">
+                            <input type="text" placeholder="dd/mm/yy" class="calendar">
+                            <img src="img/imgchange/calendar.png">
+                        </span>
+                    <span class="icon-dangki">
+                           <input type="text" placeholder="Khu vực" class="no-margin address">
+                            <img src="img/imgchange/address.png">
+                        </span>
+
                     <div class="fix-icon">
-                        <select name="choose-service" id="choose-service" class="choose-service">
-                            <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
-                            <option value="s2" class="choose-option">Gói 01</option>
-                            <option value="s3" class="choose-option">Gói Plus</option>
-                            <option value="s4" class="choose-option">Gói Pro</option>
-                        </select>
-                        <!--   <i class="fal fa-long-arrow-down"></i>-->
+                            <span class="icon-select">
+                            <select name="choose-service" id="choose-service" class="choose-service">
+                                <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
+                                <option value="s2" class="choose-option">Gói 01</option>
+                                <option value="s3" class="choose-option">Gói Plus</option>
+                                <option value="s4" class="choose-option">Gói Pro</option>
+                            </select>
+                                 <img src="img/imgchange/bottom.png">
+                                <!--   <i class="fal fa-long-arrow-down"></i>-->
+                                </span>
                     </div>
 
 
@@ -229,12 +250,13 @@
 </div>
 
 
+<!--
 
-<!-- BANNER DICH VU -->
+&lt;!&ndash; BANNER DICH VU &ndash;&gt;
 <div class="banner-service banner-price">
-    <!--  <div class="img-service">
+    &lt;!&ndash;  <div class="img-service">
           <img src="images/bannerdichvu.png">
-      </div>-->
+      </div>&ndash;&gt;
     <div class="container">
         <div class="row">
             <div class="col-md-12 banner-text-item text-light text-lg-left text-center">
@@ -251,6 +273,30 @@
         </div>
     </div>
 </div>
+-->
+
+<!-- BANNER DICH VU -->
+<div class="banner-service banner-price">
+    <div class="img-service">
+        <img src="img/imgchange/bannerbanggia.png">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 banner-text-item text-light text-lg-left text-center">
+
+                    <ul>
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Bảng giá</a></li>
+                    </ul>
+                    <h2>BẢNG GIÁ</h2>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--BANG GIÁ-->
 <div class="price">
@@ -260,7 +306,7 @@
                 <div class="price-item">
                     <div class="box-price-item">
                         <h4>VINGENE 01</h4>
-                        <p><span>9.5</span>tr/nguoi</p>
+                        <p><span>9.5</span>tr/người</p>
                         <button type="button" class="btn btn-service">ĐĂNG KÍ NGAY</button>
                         <h4>PHÁT HIỆN CÁC HỘI CHỨNG</h4>
                         <div class="price-content">
@@ -299,7 +345,7 @@
                 <div class="price-item">
                     <div class="box-price-item">
                         <h4>VINGENE PLUS</h4>
-                        <p><span>13.5</span>tr/nguoi</p>
+                        <p><span>13.5</span>tr/người</p>
                         <button type="button" class="btn btn-service">ĐĂNG KÍ NGAY</button>
                         <h4>SÀNG LỌC THÊM CÁC HỘI CHỨNG</h4>
                         <div class="price-content">
@@ -340,7 +386,7 @@
                 <div class="price-item">
                     <div class="box-price-item">
                         <h4>VINGENE PRO+</h4>
-                        <p><span>25.5</span>tr/nguoi</p>
+                        <p><span>25.5</span>tr/người</p>
                         <button type="button" class="btn btn-service">ĐĂNG KÍ NGAY</button>
                         <h4>PHÁT HIỆN CÁC HỘI CHỨNG</h4>
                         <div class="price-content">
@@ -391,19 +437,19 @@
 
 
 
-
 <section class="contact bg-contact">
+    <div class="bg-green"></div>
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div class="about-us-content mb-30 why-content box-out-address b-contact mt-20">
+                <div class="about-us-content mb-30 why-content box-out-address b-contact mt-50">
                     <h5>Contact us</h5>
                     <h2>Liên hệ Tư vấn / Đặt lịch</h2>
                     <p>Đăng kí dịch vụ redibly innovate granular internal or “organic“ sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences.</p>
                 </div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <form action="#" method="post">
+                <form action="#" method="post" class="mt-40 mb-50">
                     <input type="text" class="btn vingene-btn form-f f-ct" id="" placeholder="Họ và tên" />
                     <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 col-f no-pd-l" style="float: left;">
                         <input type="numble" class="btn vingene-btn form-f f-ct" id="" placeholder="Số điện thoại" />
@@ -420,143 +466,6 @@
         </div>
     </div>
 </section>
-
-<section class="out-address mt-50">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="about-us-content mb-30 why-content box-out-address">
-                    <h5>Our testing address</h5>
-                    <h2>Địa chỉ xét nghiệm</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="box-slide owl-carousel owl-theme">
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Thanh Xuân
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Long biên
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Thanh Xuân
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Long biên
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Thanh Xuân
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Long biên
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 
 
 

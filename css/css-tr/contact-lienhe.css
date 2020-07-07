@@ -24,7 +24,8 @@
 }
 .contact-form input::placeholder {
     color: #106A3F;
-    font-weight: lighter !important;
+    font-family: light;
+    font-weight: 600;
 }
 .contact-form input:focus{
     outline: none;
@@ -32,19 +33,27 @@
 .contact-us .btn-service{
     font-size: 20px;
     padding:7px 24px;
+    font-family: light;
+    color: #fff;
+    background-color: #056839;
+    background-image: url(../../img/imgchange/bgbutton.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .contact-us .banner-text-item ul li a {
     color: #6D6D6D;
     position: relative;
+    font-family: light;
+
 }
 .contact-us .banner-text-item ul li a:before {
     content: '';
-    width: 2px;
+    width: 1px;
     height: 14px;
     background: #6D6D6D;
     position: absolute;
-    top: 26%;
-    left: -15px;
+    top: 16%;
+    left: -18px;
 }
 
 .contact-us .banner-text-item ul li:first-child a:before {
@@ -63,6 +72,8 @@
     padding-left: 23px;
     background-color: #106a3f12;
     width: 100%;
+    font-family: light;
+    font-weight: 600;
 }
 .contact-us .choose-service:focus, .contact-us .choose-service .choose-option:focus{
   outline: none;
@@ -72,6 +83,8 @@
 }
 .contact-us .choose-service .choose-option,.contact-us .choose-service{
     color: #106A3F;
+    font-family: light;
+    font-weight: 600;
 }
 .contact-us .choose-service .choose-option{
     margin-bottom: 15px;
@@ -99,6 +112,8 @@
     background-repeat: no-repeat;
     position: relative;
     z-index: 2;
+    height: 100%;
+    width: 100%;
 }
 .contact-us .address-box:before{
     content: '';
@@ -109,19 +124,24 @@
    top:0;
    z-index: -1;
 }
-.contact-us .address-box .service-us-content{
-    background-color:transparent;
-    padding-left:80px;
+.serviceus-content{
+    padding-left:60px;
     padding-top:92px;
-    padding-bottom: 118px;
+    padding-bottom: 117px;
 }
-.contact-us .address-box .service-us-content:before{
-    display:none;
+.contact-us .container-fluid .contact-form,.contact-us .banner-text-item{
+    width:552px;
+    float:right;
+    padding-left:15px;
 }
+/*
 .contact-right{
     width: 100%;
     position: absolute;
     right: 0;
+}*/
+.contact-us .container-fluid{
+    padding:0;
 }
 .contact-us .title-color h2{
     color:#fff;
@@ -161,7 +181,8 @@
 }
 .contact-us{
     padding-top:0;
-    padding-bottom: 15%;
+    padding-bottom: 0;
+    margin-bottom: 56px;
 }
 
 .dropdown-content{

@@ -1,16 +1,78 @@
 @media screen and (max-width: 576px){
-    .test-box-item .test-img{
+    /* 3 - dich vu*/
+    .service-us .img-serviceus img{
         display: none;
     }
-    .service-us-content{
-        padding-left:15px;
-       margin-left:0;
+    .service-us .service-us-content{
+        position: unset;
+        width:100%;
+        margin-left:15px;
+        margin-right:15px;
+        padding-left:0;
+        padding-right:0;
     }
-    h2, .test-dervice .title-color h2{
-        font-size: 24px;
+    .banner-service h2{
+        font-size: 26px;
     }
-    .test-dervice .test-box p{
-        padding:0;
+    .banner-text-item ul li{
+        font-size: 12px;
+    }
+    .banner-text-item{
+        bottom: 5%;
+    }
+    .posts-service{
+        margin-top:0;
+    }
+    .test-box-item .test-img{
+        display:none;
+    }
+
+    /* 7 - dia chi xet nghiem*/
+    .dcxn-items{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 1400px){
+    .container-fluid{
+        width:100%;
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

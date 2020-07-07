@@ -1,6 +1,6 @@
 .btn-service img{
     width:24px;
-    margin-left:6px;
+    margin-left:12px;
 }
 .btn-service{
     font-size: 14px;
@@ -13,13 +13,13 @@
     border-radius: 100px;
 }
 .address-service{
-    padding-top: 5%;
-    padding-bottom: 2%;
+   margin-top:86px;
+    margin-bottom: 41px;
 }
 .diachixetnghiem .dcxn-title{
     background-color: #8cc63f4a;
     padding-top: 27px;
-    padding-bottom: 19px;
+    padding-bottom: 6px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     float:left;
@@ -30,7 +30,7 @@
 }
 .diachixetnghiem .dcxn-title p{
     color: #056839;
-    font-weight: 500;
+    font-weight: bold;
 }
 .dcxn-items{
     padding-top:27px;
@@ -72,14 +72,13 @@
     float:left;
     background-color: #ECECEC;
     padding-top:27px;
-    padding-bottom: 27px;
+    padding-bottom: 14px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 .dcxn-button button{
     border:none;
     background-color:transparent;
-    margin-left:24%;
     cursor: pointer;
 }
 .dcxn-button button:focus{
@@ -106,7 +105,9 @@
     margin-top: -8px;
     z-index: -1;
 }
-
+.address-diachi{
+    margin-bottom: 100px;
+}
 
 
 

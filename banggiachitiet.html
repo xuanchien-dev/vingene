@@ -7,7 +7,7 @@
         <meta name="keywords" content="" />
         <title>Vingene</title>
         <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="js/custom-tr.js"></script>
+
 
 
 </head>
@@ -139,6 +139,7 @@
 <div class="modal fade" id="modalvd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <!--Content-->
+
         <div class="phieuketqua">
             <div class="title-phieuketqua">
                 <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
@@ -146,34 +147,44 @@
                 <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
 
             </div>
-            <div class="content-phieuketqua">
-                <div class="item-content">
-                    <strong>Họ và tên</strong>
-                    <p>Nguyễn Thị Hà</p>
-                </div>
 
-                <div class="item-content">
-                    <strong>Mã dịch vụ</strong>
-                    <p>AAAAAAAAAA</p>
-                </div>
-                <div class="item-content">
-                    <strong>Ngày sinh</strong>
-                    <p>20/05/1980</p>
-                </div>
-                <div class="item-content">
-                    <strong>Địa chỉ</strong>
-                    <p>Địa chỉ</p>
-                </div>
-                <div class="item-content">
-                    <strong>Kết quả</strong>
-                    <p>Không phát hiện bất thường</p>
-                </div>
+            <div class="content-phieuketqua">
+                <table border="0">
+                    <tr class="item-content">
+                        <th><strong>Họ và tên</strong></th>
+                        <td><p>Nguyễn Thị Hà</p></td>
+                    </tr>
+                    <tr class="item-content">
+                        <th> <strong>Ngày sinh</strong></th>
+                        <td> <p>20/05/1980</p></td>
+                    </tr>
+                    <tr class="item-content">
+                        <th> <strong>Kết quả</strong></th>
+                        <td> <p>Không phát hiện bất thường</p></td>
+                    </tr>
+
+                </table>
+                <table border="0">
+                    <tr class="item-content">
+                        <th> <strong>Mã dịch vụ</strong></th>
+                        <td> <p>AAAAAAAAAA</p></td>
+                    </tr>
+                    <tr class="item-content">
+                        <th><strong>Địa chỉ</strong></th>
+                        <td> <p>Thanh Xuân</p></td>
+                    </tr>
+
+
+                </table>
+
             </div>
             <div class="button-bottom">
                 <button type="button" class="btn btn-service">Chi tiết kết quả xét nghiệm<img src="img/imgchange/ketqua.png"> </button>
 
             </div>
         </div>
+
+
         <!--/.Content-->
     </div>
 </div>
@@ -199,16 +210,26 @@
                     <input type="text" placeholder="Họ và tên" class="full-width">
                     <input type="text" placeholder="Số điện thoại" class="part-width">
                     <input type="text" placeholder="Email" class="part-width no-margin">
-                    <input type="text" placeholder="dd/mm/yy" class="part-width calendar">
-                    <input type="text" placeholder="Khu vực" class="part-width no-margin address">
+                    <span class="icon-dangki">
+                            <input type="text" placeholder="dd/mm/yy" class="calendar">
+                            <img src="img/imgchange/calendar.png">
+                        </span>
+                    <span class="icon-dangki">
+                           <input type="text" placeholder="Khu vực" class="no-margin address">
+                            <img src="img/imgchange/address.png">
+                        </span>
+
                     <div class="fix-icon">
-                        <select name="choose-service" id="choose-service" class="choose-service">
-                            <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
-                            <option value="s2" class="choose-option">Gói 01</option>
-                            <option value="s3" class="choose-option">Gói Plus</option>
-                            <option value="s4" class="choose-option">Gói Pro</option>
-                        </select>
-                        <!--   <i class="fal fa-long-arrow-down"></i>-->
+                            <span class="icon-select">
+                            <select name="choose-service" id="choose-service" class="choose-service">
+                                <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
+                                <option value="s2" class="choose-option">Gói 01</option>
+                                <option value="s3" class="choose-option">Gói Plus</option>
+                                <option value="s4" class="choose-option">Gói Pro</option>
+                            </select>
+                                 <img src="img/imgchange/bottom.png">
+                                <!--   <i class="fal fa-long-arrow-down"></i>-->
+                                </span>
                     </div>
 
 
@@ -251,7 +272,7 @@
 </div>
 
 <!--BAI VIET-->
-<div class="post-price">
+<div class="post-price price-detail">
     <div class="container">
         <div class="row wow fadeInUp">
             <div class="col-md-8 post-price-content">
@@ -260,7 +281,18 @@
                 <p>Đây là xét nghiệm được hiệp hội quốc tế về chẩn đoán trước khi sinh (International Society for Prenatal Diagnosis - ISPD) khuyến cáo là xét nghiệm đầu tiên cho tất cả các phụ nữ mang thai.</p>
                 <h4>VINGENE PRO+ giúp sàng lọc các hội chứng :</h4>
                 <div class="price-content">
-                    <ul>
+                    <ul class="ul-left">
+                        <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
+                        <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
+                        <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
+                        <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
+                        <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
+                        <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
+                        <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
+                        <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
+
+                    </ul>
+                    <ul class="ul-right">
                         <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
                         <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
                         <li><img src="img/imgchange/checkblack.svg">Lorem Ipsum is simply </li>
@@ -276,18 +308,19 @@
                 <p><strong>Đối tượng:</strong> Áp dụng được với cả thai đơn và thai đôi</p>
                 <p><strong>Bảo hiểm:</strong> Hỗ trợ bảo hiểm lên đến 200 triệu đồng</p>
                 <h4>Chính sách hỗ trợ sau xét nghiệm</h4>
-                <p><strong>Đối tượng:</strong> Áp dụng được với cả thai đơn và thai đôi</p>
-                <p><strong>Bảo hiểm:</strong> Hỗ trợ bảo hiểm lên đến 200 triệu đồng</p>
-                <p><strong>Đối tượng:</strong> Áp dụng được với cả thai đơn và thai đôi</p>
-                <p>Bảo hiểm: Hỗ trợ bảo hiểm lên đến 200 triệu đồng</p>
+                <p><strong>Phát hiện bất thường NST:</strong>hỗ trợ 5 triệu đồng để khẳng định kết quả bằng xét nghiệm chẩn đoán (chọc ối và làm karyotype). Thai phụ sau khi làm chọc ối và karyotype tại các cơ sở y tế để đảm bảo tính khách quan, chỉ cần gửi lại cho Vincibio hình ảnh hóa đơn và kết quả xét nghiệm, Vincibio sẽ ngay lập tức chuyển tiền hỗ trợ.
+                </p>
+                 <p><strong>Phát hiện mẹ mang gene gây bệnh có thể truyền cho con Thalassemia và 4 bệnh di truyền khác:</strong>miễn phí xét nghiệm cho chồng và bé sau khi sinh. </p>
+                <p><strong>Không phát hiện bất thường: </strong>Hỗ trợ 200 triệu đồng nếu sau sinh trẻ mang các trisomy 13, 18, 21 đã phân tích (xác nhận bằng karyotype).</p>
+                <p>   Trong trường hợp kết quả pro+ không phát hiện bất thường nhưng trong quá trình siêu âm, bác sĩ nghi ngờ thai nhi mắc Down, Edwards hoặc Patau; thai phụ và bác sĩ không yên tâm có thể thực hiện chọc ối và xét nghiệm chẩn đoán. Nếu kết quả chọc ối khác kết quả proNIPT thì VINGENE sẽ hỗ trợ 30 triệu đồng.</p>
             </div>
             <div class="col-md-4">
                 <div class="col-md-12 price-tabs1">
                     <div class="price-item">
                         <div class="box-price-item">
-                            <h4>VINGENE 01<img src="img/imgchange/rightwhite.png"></h4>
+                            <h4>VINGENE 01<img class="img-block1" src="img/imgchange/rightwhite.png"></h4>
                             <div class="price-tabs-show1">
-                                <p><span>9.5</span>tr/nguoi</p>
+                                <p><span>9.5</span>tr/người</p>
 
                                 <h4>PHÁT HIỆN CÁC HỘI CHỨNG</h4>
                                 <div class="price-content">
@@ -325,9 +358,9 @@
                 <div class="col-md-12 price-tabs2">
                     <div class="price-item">
                         <div class="box-price-item">
-                            <h4>VINGENE LPUS<img src="img/imgchange/rightwhite.png"></h4>
+                            <h4>VINGENE LPUS<img class="img-block2" src="img/imgchange/rightwhite.png"></h4>
                             <div class="price-tabs-show2">
-                                <p><span>13.5</span>tr/nguoi</p>
+                                <p><span>13.5</span>tr/người</p>
 
                                 <h4>SÀNG LỌC THÊM CÁC HỘI CHỨNG</h4>
                                 <div class="price-content">
@@ -371,9 +404,9 @@
                 <div class="col-md-12 price-tabs3">
                     <div class="price-item">
                         <div class="box-price-item">
-                            <h4>VINGENE PRO<img src="img/imgchange/rightwhite.png"></h4>
+                            <h4>VINGENE PRO<img class="img-block3" src="img/imgchange/rightwhite.png"></h4>
                             <div class="price-tabs-show3">
-                                <p><span>25.5</span>tr/nguoi</p>
+                                <p><span>25.5</span>tr/người</p>
 
                                 <h4>PHÁT HIỆN CÁC HỘI CHỨNG</h4>
                                 <div class="price-content">
@@ -390,6 +423,8 @@
                                         <li><img src="img/imgchange/check.svg">Lorem Ipsum is simply </li>
 
                                     </ul>
+
+
                                 </div>
                                 <h4>PHÁT HIỆN BẤT THƯỜNG SỐ LƯỢNG TẤT CẢ CÁC NST CÒN LẠI</h4>
                                 <div class="price-content">
@@ -424,76 +459,82 @@
 
 
 
-
 <!--QUY TRINH XET NGHIEM: test-->
 <div class="test-dervice">
-    <div class="container">
-        <div class="row wow fadeInUp">
-            <div class="col-md-12 title-color text-center">
-                <h2>QUY TRÌNH XÉT NGHIỆM</h2>
-            </div>
-            <div class="col-md col-6">
-                <div class="test-box-item text-center">
-                    <div class="test-box">
-                        <img src="img/imgchange/test1.png">
-                        <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
-                    </div>
-                    <div class="test-img">
-                        <img src="img/imgchange/right.png">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md col-6">
-                <div class="test-box-item text-center">
-                    <div class="test-box">
-                        <img src="img/imgchange/test2.png">
-                        <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
-                    </div>
-                    <div class="test-img">
-                        <img src="img/imgchange/right.png">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md col-6">
-                <div class="test-box-item text-center">
-                    <div class="test-box">
-                        <img src="img/imgchange/test3.png">
-                        <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
-                    </div>
-                    <div class="test-img">
-                        <img src="img/imgchange/right.png">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md col-6">
-                <div class="test-box-item text-center">
-                    <div class="test-box">
-                        <img src="img/imgchange/test4.png">
-                        <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
-                    </div>
-                    <div class="test-img">
-                        <img src="img/imgchange/right.png">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md col-6">
-                <div class="test-box-item text-center">
-                    <div class="test-box">
-                        <img src="img/imgchange/test5.png">
-                        <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
-                    </div>
+    <div class="img-test-dervice">
+        <!-- <img src="img/imgchange/quytrinh.png" class="img-test">-->
+        <div class="container">
+            <div class="row wow fadeInUp">
+                <div class="test-dervice-item">
 
                 </div>
+                <div class="col-md-12 title-color text-center">
+                    <h2>QUY TRÌNH XÉT NGHIỆM</h2>
+                </div>
+                <div class="col-md col-6">
+                    <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="200ms">
+                        <div class="test-box">
+                            <img src="img/imgchange/test1.png">
+                            <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
+                        </div>
+                        <div class="test-img">
+                            <img src="img/imgchange/right.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-6">
+                    <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="400ms">
+                        <div class="test-box">
+                            <img src="img/imgchange/test2.png">
+                            <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
+                        </div>
+                        <div class="test-img">
+                            <img src="img/imgchange/right.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-6">
+                    <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="600ms">
+                        <div class="test-box">
+                            <img src="img/imgchange/test3.png">
+                            <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
+                        </div>
+                        <div class="test-img">
+                            <img src="img/imgchange/right.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-6">
+                    <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="800ms">
+                        <div class="test-box">
+                            <img src="img/imgchange/test4.png">
+                            <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
+                        </div>
+                        <div class="test-img">
+                            <img src="img/imgchange/right.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md col-6">
+                    <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="400ms">
+                        <div class="test-box">
+                            <img src="img/imgchange/test5.png">
+                            <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
+                        </div>
+
+                    </div>
+                </div>
+
+
             </div>
-
-
         </div>
     </div>
+
 </div>
 
 
-<section class="vingene-portfolio section-padding-80 clearfix">
+<section class="vingene-portfolio vingene-portfolio-fix clearfix">
     <div class="container">
         <div class="row wow fadeInUp">
             <div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
@@ -658,19 +699,19 @@
         </div>
     </div>
 </section>
-
 <section class="contact bg-contact">
+    <div class="bg-green"></div>
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <div class="about-us-content mb-30 why-content box-out-address b-contact mt-20">
+                <div class="about-us-content mb-30 why-content box-out-address b-contact mt-50">
                     <h5>Contact us</h5>
                     <h2>Liên hệ Tư vấn / Đặt lịch</h2>
                     <p>Đăng kí dịch vụ redibly innovate granular internal or “organic“ sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences.</p>
                 </div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                <form action="#" method="post">
+                <form action="#" method="post" class="mt-40 mb-50">
                     <input type="text" class="btn vingene-btn form-f f-ct" id="" placeholder="Họ và tên" />
                     <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 col-f no-pd-l" style="float: left;">
                         <input type="numble" class="btn vingene-btn form-f f-ct" id="" placeholder="Số điện thoại" />
@@ -687,142 +728,6 @@
         </div>
     </div>
 </section>
-
-<section class="out-address mt-50">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="about-us-content mb-30 why-content box-out-address">
-                    <h5>Our testing address</h5>
-                    <h2>Địa chỉ xét nghiệm</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="box-slide owl-carousel owl-theme">
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Thanh Xuân
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Long biên
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Thanh Xuân
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Long biên
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Thanh Xuân
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="box-slide-l">
-                        <h3>
-                            Chi nhánh xét nghiệm Long biên
-                        </h3>
-                        <div class="desc-slide-address">
-                            <p>
-                                <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
-                            </p>
-                            <p>
-                                <span>Email:</span>
-                                <span>Chinhanhxetnghiem@vingene.vn</span>
-                            </p>
-                            <p>
-                                <span>Hotline:</span>
-                                <span>0439336288 &emsp;|&emsp; 0439336288</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 
 
 

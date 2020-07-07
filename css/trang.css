@@ -1,3 +1,13 @@
+@import url('css-tr/responsive-mobile.css');
+
+
+
+.bg-color-dangki{
+    background-color: #2D2D2D;
+    padding-top: 226px;
+    padding-bottom: 226px;
+}
+
 .phieuketqua{
     width: 746px;
     margin: auto;
@@ -5,7 +15,6 @@
     overflow: hidden;
     box-shadow: 0px 3px 15px #00000029;
     background-color:#fff;
-    margin-top:226px;
 }
 .title-phieuketqua{
     display:flex;
@@ -29,6 +38,8 @@
     padding-top: 24px;
     padding-bottom: 10px;
     padding-left: 60px;
+    font-family: light;
+    font-weight: bold;
 }
 .title-phieuketqua .button-close{
     z-index: 2;
@@ -43,22 +54,36 @@
    width: 16px;
 
 }
+.phieuketqua .btn-service{
+    font-size: 18px;
+    background-color: #056839;
+    background-image: none;
+    color: #fff;
+    font-family: light;
+    padding-top:10px;
+    padding-bottom:7px;
+    padding-left:22px;
+    padding-right:22px;
+}
 .content-phieuketqua{
     margin-left: 60px;
     margin-top: 59px;
     margin-bottom: 36px;
     display:inline-block;
 }
+.content-phieuketqua table{
+    float:left;
+}
 .content-phieuketqua strong, .content-phieuketqua p{
    color:#056839;
 }
 .item-content{
-    width:50%;
-    float:left;
     display: flex;
 }
-
-.item-content p{
+.item-content th{
+    width:85px;
+}
+.item-content td{
    margin-left:50px;
 }
 .button-bottom{
@@ -69,7 +94,10 @@
     margin-left:40px;
     margin-right:40px;
     margin-top:50px;
-    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.dangki .form-dangkixetnghiem .contact-form input{
+    margin-bottom: 32px;
 }
 .button-dangkixetnghiem{
     margin-left: 40px;
@@ -83,9 +111,17 @@
 }
 .form-dangkixetnghiem .contact-form input:nth-child(4){
     position: relative;
-}
+}/*
 .form-dangkixetnghiem .contact-form input:nth-child(4):before{
     content: url(../img/imgchange/calendar.png);
+    position: absolute;
+}*/
+.form-dangkixetnghiem .contact-form input{
+    position: relative;
+}
+.form-dangkixetnghiem .contact-form i:before{
+    content: '\f073';
+    font-family: fontawesome;
     position: absolute;
 }
 .button-close:focus{
@@ -132,8 +168,35 @@
     box-shadow: 0px 3px 15px #00000029;
     transition: 0.5s;
 }
+.icon-dangki{
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    float:left;
+}
+.icon-dangki .calendar, .icon-dangki .address{
+    width: 96%;
+}
+.icon-dangki img{
+    position: absolute;
+    color: #106a45;
+    right: 9%;
+    top: 12%;
 
+}
 
+/*CSS KIEEUR KHOONG THEER CHAAPS NHAANJ DDWWOCJ*/
+.icon-select{
+    position: relative;
+}
+.icon-select img{
+    position: absolute;
+    right: 3px;
+    top: -7px;
+    padding: 11px;
+    background-color: #eef4f1;
+    border-radius: 22px;
+}
 
 
 
