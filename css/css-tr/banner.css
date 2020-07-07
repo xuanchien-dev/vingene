@@ -10,13 +10,24 @@ BANNER DICH VU*/
     font-size:30px;
     color: #056839;
 }
+.banner-service .img-service img{
+    width: 100%;
+}
+/*
 .banner-service{
-    background-image: url("../../img/imgchange/bannerdichvu.png");
+   !* background-image: url("../../img/imgchange/bannerdichvu.png");*!
     background-color: #578fe1;
     padding-top: 240px;
     padding-bottom: 60px;
     background-repeat: no-repeat;
     background-size: cover;
+}*/
+.img-service{
+    position: relative;
+}
+.banner-service .banner-text-item{
+    position: absolute;
+    bottom: 14%;
 }
 .banner-text-item ul{
   padding-left:0;
@@ -36,6 +47,7 @@ BANNER DICH VU*/
 .banner-text-item ul li a{
     color: white;
     position: relative;
+    font-family: light;
 }
 .banner-text-item ul li a:before{
     content: '';
@@ -61,6 +73,10 @@ BANNER DICH VU*/
     color:#056839;
     margin-bottom: 15px;
 }
+.service-us p{
+    color: #2D2D2D;
+    font-weight: bold;
+}
 .title-service-us{
     position: relative;
 }
@@ -78,20 +94,31 @@ BANNER DICH VU*/
     font-size: 16px;
     margin-left: 60px;
 }
-
+/*
 .service-us{
     background-image: url("../../img/imgchange/serviceus.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 30px;
     padding-top: 42px;
+}*/
+.service-us .img-serviceus{
+    position: relative;
+}
+.service-us .img-serviceus img{
+    width:100%;
+    height:529px;
 }
 .service-us-content {
     background-color: #ffffffa6;
-    padding-top: 88px;
-    padding-bottom: 30px;
+    padding-top: 46px;
+    padding-bottom: 15px;
     padding-left: 45px;
     margin-left: -30px;
+    position: absolute;
+    padding-right:41px;
+    top: 42px;
+    width:739px;
 }
 .service-us-content:before {
     position: absolute;

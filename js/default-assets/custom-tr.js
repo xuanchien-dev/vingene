@@ -9,6 +9,19 @@ $(document).ready(function () {
     $(".price-tabs3").click(function () {
         $(".price-tabs-show3").fadeToggle("slow");
     });
+    $(".price-tabs3").click(function (event) {
+        event.preventDefault();
+        $('.img-block3').css('display','none');
+    });
+    $(".price-tabs1").click(function (event) {
+        event.preventDefault();
+        $('.img-block1').css('display','none');
+    });
+    $(".price-tabs2").click(function (event) {
+        event.preventDefault();
+        $('.img-block2').css('display','none');
+    });
+
 
 
 

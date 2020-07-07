@@ -141,6 +141,7 @@
 <div class="modal fade" id="modalvd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <!--Content-->
+
         <div class="phieuketqua">
             <div class="title-phieuketqua">
                 <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
@@ -148,34 +149,44 @@
                 <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
 
             </div>
-            <div class="content-phieuketqua">
-                <div class="item-content">
-                    <strong>Họ và tên</strong>
-                    <p>Nguyễn Thị Hà</p>
-                </div>
 
-                <div class="item-content">
-                    <strong>Mã dịch vụ</strong>
-                    <p>AAAAAAAAAA</p>
-                </div>
-                <div class="item-content">
-                    <strong>Ngày sinh</strong>
-                    <p>20/05/1980</p>
-                </div>
-                <div class="item-content">
-                    <strong>Địa chỉ</strong>
-                    <p>Địa chỉ</p>
-                </div>
-                <div class="item-content">
-                    <strong>Kết quả</strong>
-                    <p>Không phát hiện bất thường</p>
-                </div>
+            <div class="content-phieuketqua">
+                <table border="0">
+                    <tr class="item-content">
+                        <th><strong>Họ và tên</strong></th>
+                        <td><p>Nguyễn Thị Hà</p></td>
+                    </tr>
+                    <tr class="item-content">
+                        <th> <strong>Ngày sinh</strong></th>
+                        <td> <p>20/05/1980</p></td>
+                    </tr>
+                    <tr class="item-content">
+                        <th> <strong>Kết quả</strong></th>
+                        <td> <p>Không phát hiện bất thường</p></td>
+                    </tr>
+
+                </table>
+                <table border="0">
+                    <tr class="item-content">
+                        <th> <strong>Mã dịch vụ</strong></th>
+                        <td> <p>AAAAAAAAAA</p></td>
+                    </tr>
+                    <tr class="item-content">
+                        <th><strong>Địa chỉ</strong></th>
+                        <td> <p>Thanh Xuân</p></td>
+                    </tr>
+
+
+                </table>
+
             </div>
             <div class="button-bottom">
                 <button type="button" class="btn btn-service">Chi tiết kết quả xét nghiệm<img src="img/imgchange/ketqua.png"> </button>
 
             </div>
         </div>
+
+
         <!--/.Content-->
     </div>
 </div>
@@ -201,16 +212,26 @@
                     <input type="text" placeholder="Họ và tên" class="full-width">
                     <input type="text" placeholder="Số điện thoại" class="part-width">
                     <input type="text" placeholder="Email" class="part-width no-margin">
-                    <input type="text" placeholder="dd/mm/yy" class="part-width calendar">
-                    <input type="text" placeholder="Khu vực" class="part-width no-margin address">
+                    <span class="icon-dangki">
+                            <input type="text" placeholder="dd/mm/yy" class="calendar">
+                            <img src="img/imgchange/calendar.png">
+                        </span>
+                    <span class="icon-dangki">
+                           <input type="text" placeholder="Khu vực" class="no-margin address">
+                            <img src="img/imgchange/address.png">
+                        </span>
+
                     <div class="fix-icon">
-                        <select name="choose-service" id="choose-service" class="choose-service">
-                            <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
-                            <option value="s2" class="choose-option">Gói 01</option>
-                            <option value="s3" class="choose-option">Gói Plus</option>
-                            <option value="s4" class="choose-option">Gói Pro</option>
-                        </select>
-                        <!--   <i class="fal fa-long-arrow-down"></i>-->
+                            <span class="icon-select">
+                            <select name="choose-service" id="choose-service" class="choose-service">
+                                <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
+                                <option value="s2" class="choose-option">Gói 01</option>
+                                <option value="s3" class="choose-option">Gói Plus</option>
+                                <option value="s4" class="choose-option">Gói Pro</option>
+                            </select>
+                                 <img src="img/imgchange/bottom.png">
+                                <!--   <i class="fal fa-long-arrow-down"></i>-->
+                                </span>
                     </div>
 
 
@@ -243,7 +264,7 @@
 
                 <h2 class="h2change">ĐỊA CHỈ XÉT NGHIỆM</h2>
             </div>
-            <div class="col-md-4 text-right">
+            <div class="col-md-4 text-lg-right text-left">
                 <button type="button" class="btn btn-service">Địa chỉ xét nghiệm<img src="img/imgchange/pdf%20(1).svg"> </button>
             </div>
         </div>
@@ -282,7 +303,7 @@
                         <p>Huyện</p>
                         <input type="text">
                     </div>
-                    <div class="col-md-1 dcxn-button">
+                    <div class="col-md-1 dcxn-button text-center">
                         <button type="button"><img src="img/imgchange/search.svg"> </button>
                     </div>
                 </div>
@@ -299,16 +320,9 @@
 </div>
 
 
-<section class="out-address mt-50 out-address-3">
+<section class="out-address out-address-3 address-diachi">
     <div class="container">
-        <div class="row wow fadeInUp">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="about-us-content mb-30 why-content box-out-address">
-                    <h5>Our testing address</h5>
-                    <h2>Địa chỉ xét nghiệm</h2>
-                </div>
-            </div>
-        </div>
+
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="box-slide owl-carousel owl-theme">
