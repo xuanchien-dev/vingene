@@ -56,7 +56,42 @@
     -o-transition: visibility .5s;
     transition: visibility .5s;
     right: 0px;
+    top: 6%;
+    position: absolute;
+}
+.coccoc-alo-phone2{
+    visibility: hidden;
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    z-index: 20 !important;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: visibility .5s;
+    -moz-transition: visibility .5s;
+    -o-transition: visibility .5s;
+    transition: visibility .5s;
+    right: 0px;
     top: 8%;
+    position: absolute;
+}
+
+.coccoc-alo-phone-kt{
+     visibility: hidden;
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    z-index: 20 !important;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: visibility .5s;
+    -moz-transition: visibility .5s;
+    -o-transition: visibility .5s;
+    transition: visibility .5s;
+    right: 0px;
+    top: 10%;
     position: absolute;
 }
 .coccoc-alo-phone.coccoc-alo-show {
@@ -249,7 +284,31 @@
     top: 70px;
     left: 70px;
     position: absolute;
-    background: rgba(30, 30, 30, 0.1) url("../img/hotline.png") no-repeat center center;
+    background: rgba(30, 30, 30, 0.1) url("../img/Group 7401.png") no-repeat center center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    opacity: .7;
+    -webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+    -moz-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+    -ms-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+    -o-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+}
+
+.coccoc-alo-ph-img-circle.circle2 {
+    width: 60px;
+    height: 60px;
+    top: 70px;
+    left: 70px;
+    position: absolute;
+    background: rgba(30, 30, 30, 0.1) url("../img/Group 7402.png") no-repeat center center;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
@@ -290,8 +349,8 @@
     background-color: #75eb50 9
 }
 .coccoc-alo-phone.coccoc-alo-green .coccoc-alo-ph-img-circle {
-    background-color: #f2005c;
-    background-color: #00aff2 9;
+   /* background-color: #f2005c;
+    background-color: #00aff2 9;*/
 }
 .coccoc-alo-phone.coccoc-alo-gray.coccoc-alo-hover .coccoc-alo-ph-img-circle,
 .coccoc-alo-phone.coccoc-alo-gray:hover .coccoc-alo-ph-img-circle {

@@ -49,11 +49,11 @@
                                     </div>
 
                                    
-                                    <div class="" style="display: flex;">
+                                    <div class="d-mb-none" style="display: flex;" >
                                          <img src="img/vn.png" alt="" />
                                         <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
                                             <select class="tech" name="tech" id="tech">
-                                                <option value="VN" data-image="img/us.png">VN</option>
+                                                <option value="VN" url="img/us.png">VN</option>
                                                 <option value="US" data-image="img/vn.png">US</option>
                                             </select>
                                         </form>
@@ -64,6 +64,15 @@
 
                         <nav class="classy-navbar justify-content-between" id="vingeneNav">
                             <a class="nav-brand" href="index.html"><img src="./img/logo.png" alt="" /></a>
+                            <div class="d-mb-block">
+                               <img src="img/vn.png" alt="" />
+                               <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
+                                <select class="tech" name="tech" id="tech">
+                                    <option value="VN" url="img/us.png">VN</option>
+                                    <option value="US" data-image="img/vn.png">US</option>
+                                </select>
+                            </form>
+                        </div>
                             <div class="classy-navbar-toggler">
                                 <span class="navbarToggler"><span></span><span></span><span></span></span>
                             </div>
@@ -134,20 +143,51 @@
             </div>
                         
                </div>
+               <div class="hotline">
+                <div class="btn-hotline-fx d-none d-md-block">
+                    <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show" id="coccoc-alo-phoneIcon" style="/*left: 0px; top: calc(50% - -50px*/); display: block;">
+                        <a href="tel:0979843527" target="_self">
+                            <div class="coccoc-alo-ph-circle"></div>
+                            <div class="coccoc-alo-ph-circle-fill"></div>
+                            <div class="coccoc-alo-ph-img-circle" data-toggle="modal" data-target="#dnntd"></div>
+                            <div class="title-btn-hotline">
+                                <!-- <span style="color: red">Hotline</span> <br>
+                                <span class="tel">0918256713</span> -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotline" style="">
+                <div class="btn-hotline-fx d-none d-md-block">
+                    <div class="coccoc-alo-phone coccoc-alo-phone2 coccoc-alo-green coccoc-alo-show" id="coccoc-alo-phoneIcon" style="/*left: 0px; top: calc(50% - -50px*/); display: block;">
+                        <a href="tel:0979843527" target="_self">
+                            
+                            
+                            <div class="coccoc-alo-ph-img-circle circle2 " data-toggle="modal" data-target="#dnntd"></div>
+                            <div class="title-btn-hotline">
+                                <!-- <span style="color: red">Hotline</span> <br>
+                                <span class="tel">0918256713</span> -->
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
 
 
-        <section class="about-us mt-50">
+        <section class="about-us mt-50 wow fadeInUp">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 wow fadeInLeft">
                         <div class="box-img">
                             <img src="img/abou-gt.png" alt="" width="100%">
                         </div>
                     </div>
-                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 wow fadeInRight">
                         <div class="about-us-content gt mb-80">
                             <h5>About us</h5>
                             <h3>Xét nghiệm NIPT là gì?</h3>
@@ -191,7 +231,7 @@
             </div>
         </section>
 
-        <section class="bt-about mt-20">
+        <section class="bt-about mt-20 wow fadeInUp">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
@@ -269,7 +309,7 @@
         </section>
 
 
-        <section class="contact bg-contact">
+        <section class="contact bg-contact wow fadeInUp">
             <div class="bg-green"></div>
             <div class="container">
                 <div class="row">
@@ -279,7 +319,7 @@
                             <h2>vingene</h2>
                             <div class="desc-footer contact-us mt-15">
                                     <div class="d-flex ct-us">
-                                        <img src="img/ic-map.png" alt="" width="22px;" height="22px;" />
+                                        <img src="img/Group 7252.png" alt="" width="22px;" height="22px;" />
                                         <p>
                                             <span>Địa chỉ:</span>
                                             <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
@@ -325,7 +365,7 @@
         
         
 
-        <section class="out-address mt-50 bg-xn">
+        <section class="out-address mt-50 bg-xn wow fadeInUp">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -462,7 +502,7 @@
 
        
 
-        <section class="out-dt mt-50 bg-white">
+        <section class="out-dt mt-50 bg-white wow fadeInUp">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -496,16 +536,27 @@
             </div>
         </section>
 
-        <section class="vingene-portfolio clearfix mt-30">
+        <section class="vingene-portfolio clearfix mt-30 wow fadeInUp">
             <div class="container">
-                <div class="row wow fadeInUp">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d-md-none d-block ">
+                        <select name="favorites" class="favorites-select top">
+                            <option value="kt">Kiến thức ADN</option>
+                            <option value="ktadn">Chuẩn đoạn ung thư</option>
+                            <option selected="" value="pt">Phân tích di truyền</option>
+                            <option value="yk">Xem tất cả</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row wow fadeInUp ">
                     <div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
                         <div class="about-us-content mb-30 why-content box-out-address">
                             <h5>knowledge</h5>
                             <h2>Kiến thức</h2>
                         </div>
                     </div>
-                    <div class="col-xs-9 col-sm-8 col-md-9 col-lg-9 menu-tab">
+                    <div class="col-xs-9 col-sm-8 col-md-9 col-lg-9 menu-tab d-none d-md-block">
                         <ul class="nav nav-tabs no-bd">
                             <li class="active"><a data-toggle="tab" href="#home">Kiến thức ADN</a></li>
                             <li><a data-toggle="tab" href="#menu1">Phân tích di truyền</a></li>
@@ -513,12 +564,13 @@
                             <li><a href="" class="btn vingene-btn mt-30 a-view all-view">Xem tất cả</a></li>
                         </ul>
                     </div>
+
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="tab-content">
                             <div id="home" class="tab-pane in active">
                                 <div class="row">
                                     <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="single-post-area mb-80">
+                                        <div class="single-post-area mb-40">
                                             <div class="post-thumbnail zoom">
                                                 <a href="">
                                                     <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -540,7 +592,7 @@
                                     </div>
 
                                     <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="single-post-area mb-80">
+                                        <div class="single-post-area mb-40">
                                             <div class="post-thumbnail zoom">
                                                 <a href="">
                                                     <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -562,7 +614,7 @@
                                     </div>
 
                                     <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="single-post-area mb-80">
+                                        <div class="single-post-area mb-40">
                                             <div class="post-thumbnail zoom">
                                                 <a href="">
                                                     <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -587,7 +639,7 @@
                             <div id="menu1" class="tab-pane fade">
                                 <div class="row">
                                     <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="single-post-area mb-80">
+                                        <div class="single-post-area mb-40">
                                             <div class="post-thumbnail zoom">
                                                 <a href="">
                                                     <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -609,7 +661,7 @@
                                     </div>
 
                                     <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="single-post-area mb-80">
+                                        <div class="single-post-area mb-40">
                                             <div class="post-thumbnail zoom">
                                                 <a href="">
                                                     <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -634,7 +686,7 @@
                             <div id="menu2" class="tab-pane fade">
                                 <div class="row">
                                     <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="single-post-area mb-80">
+                                        <div class="single-post-area mb-40">
                                             <div class="post-thumbnail zoom">
                                                 <a href="">
                                                     <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -659,13 +711,14 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <footer class="footer-area pdt-35">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-12 col-sm-4 col-md-4">
+                    <div class="col-12 col-sm-4 col-md-4 wow fadeInUp">
                         <div class="single-footer-widget mb-80">
                             <!-- Footer Logo -->
                             <a href="#" class="footer-logo">
@@ -675,7 +728,7 @@
                             <div class="mb-30">
                                 <div class="desc-footer">
                                     <div class="d-flex">
-                                        <img src="img/call.png" alt="" width="22px;" height="22px;" />
+                                        <img src="img/Group 7234.png" alt="" width="22px;" height="22px;" />
                                         <p>
                                             <span>Địa chỉ:</span>
                                             <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
@@ -707,7 +760,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-2 col-xl-2 push-2">
+                    <div class="col-12 col-sm-6 col-md-2 col-xl-2 push-2 wow fadeInUp">
                         <div class="single-footer-widget mb-80 mt-42">
                             <div class="open-time">
                                 <ul>
@@ -729,7 +782,7 @@
                     </div>
 
                     <!-- Single Footer Widget -->
-                    <div class="col-12 col-md-4 col-xl-4">
+                    <div class="col-12 col-md-4 col-xl-4 wow fadeInUp">
                         <div class="single-footer-widget mb- mt-42">
                             <h4 class="widget-title">BẢN ĐỒ</h4>
                             <div class="contact-address">
@@ -739,7 +792,7 @@
                     </div>
                 </div>
             </div>
-            <div class="copy-right">
+            <div class="copy-right wow fadeInUp">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
@@ -754,66 +807,9 @@
         </footer>
         <!-- Footer Area End -->
 
-        <div class="modal fade custom_search_pop" id="Modal-search" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="contai">
-                        <div class="row">
-                            <div class="col-12 form-top">
-                                <div id="custom-search-input">
-                                    <div class="input-group col-md-12">
-                                        <input type="text" class="search-query form-control f-search" placeholder="Tìm kiếm" />
-                                        <div class="input-group-btn">
-                                            <button class="btn" type="supmit" data-toggle="modal" data-target="#Modal-search">
-                                                <span class="fa fa-search"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
-        <!--Modal: modalYT-->
-        <div class="modal fade" id="modalvd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <!--Content-->
-                <div class="modal-content">
-                    <!--Body-->
-                    <div class="modal-body mb-0 p-0">
-                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <!--Footer-->
-                    <div class="modal-footer justify-content-center flex-column flex-md-row">
-                        <div>
-                            <a type="button" class="btn-floating btn-sm btn-fb">
-                                <i class="fa fa-facebook-f"></i>
-                            </a>
-                            <!--Twitter-->
-                            <a type="button" class="btn-floating btn-sm btn-tw">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <!--Google +-->
-                            <a type="button" class="btn-floating btn-sm btn-gplus">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                            <!--Linkedin-->
-                            <a type="button" class="btn-floating btn-sm btn-ins">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </div>
-                        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-                <!--/.Content-->
-            </div>
-        </div>
+        
 
         <div class="mobile-hotline">
             <div class="mobile-hotline-left">

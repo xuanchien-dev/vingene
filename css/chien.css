@@ -40,12 +40,12 @@ a.btn.vingene-btn.dky-top:before {
 }
 .owl-prev img{
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50px;
 }
 .owl-next img{
   position: absolute;
-  top: 50%;
+  top: 47%;
   right: 50px;
 }
 input.btn.vingene-btn.form-f{
@@ -115,6 +115,10 @@ button.bg-btn:before {
     left: 75%;
     top: 5px;
 }
+a.btn.vingene-btn.mt-30.a-view:hover{
+  background-color: #8CC63F;
+  color: #056839;
+}
 .box-l{
   background-image: url('../img/bg-image-box-l.png');
   background-repeat: no-repeat;
@@ -174,6 +178,7 @@ button.bg-btn:before {
 .div-box-shadow{
   box-shadow: 0px 3px 15px #00000029;
   border-radius: 8px;
+  background-color: #fff;
 }
 input.form-control.control{
   border: 1px solid #106A3F;
@@ -235,7 +240,8 @@ button.btnSubmit.supmit {
 }
 @media only screen and (max-width: 767px) {
     .single-welcome-slide {
-        height: 500px;
+        height: 300px;
+        top: 60px;
     }
 }
 .single-welcome-slide .welcome-text {
@@ -441,7 +447,7 @@ a.popup-video.video_play_button {
 }
 .bg-green{
   position: absolute;
-  background-color: #22744bc9;
+  background-color: #22744bdb;
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -532,7 +538,7 @@ a.popup-video.video_play_button {
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
 }
 .single-service-area.wow.fadeInUp.hover-h5:hover h5{
-  color: black;
+  color: #CAF88D;
 }
 .single-service-area.about:hover h5{
   color: #056839;
@@ -677,6 +683,7 @@ a.popup-video.video_play_button {
   font-family: SemiBold;
   color: #6D6D6D;
   letter-spacing: 0;
+  display: flex;
 }
 .section-heading-why h3{
   color: #056839;
@@ -839,6 +846,7 @@ a.popup-video.video_play_button {
   margin-right: 10px;
   font-weight: bold;
   display: inline-block;
+  float: left;
 }
 .desc-slide-address p span:last-child{
   width: calc(100% - 70px );
@@ -847,6 +855,7 @@ a.popup-video.video_play_button {
   opacity: 1;
   font-weight: bold;
   font-family: Regular;
+  display: flex;
 }
 .box-slide-l:hover{
   border: 1px solid transparent;
@@ -1098,11 +1107,15 @@ a.btn.vingene-btn.mt-30.a-view.all-view{
   position: relative;
   padding-right: 20px;
   color: #fff;
+  height: 33px;
+  line-height: 33px;
+  font-size: 16px;
+  margin-top: 40px;
 }
 a.btn.vingene-btn.mt-30.a-view.all-view:before{
  content: url(../img/icon-next.png);
  background-repeat: no-repeat;
- bottom: 0px;
+ bottom: -3px;
  right: 10px;
  position: absolute;
 }
@@ -1708,18 +1721,49 @@ font-weight: bold;
 }
 select.favorites-select {
     margin-bottom: 30px;
+    margin-top: 15px;
     width: 100%;
     height: 35px;
     border: 1px solid transparent;
     background-color: #8CC63F;
     color: #fff;
     outline: none;
+    font-size: 18px;
 }
 .post-thumbnail.zoom img{
   width: 100%;
+  height: 250px;
 }
 .out-address.mgt-40 .owl-dots{
   margin-bottom: 20px;
+}
+.box-center-slide{
+   margin: 0 auto;
+   width: 75%;
+   margin-top: -140px;
+   position: relative;
+   z-index: 9;
+   margin-bottom: 68px;
+}
+a.prew-number.current:hover, a.next-number.current:hover{
+  background-color: #8CC63F !important;
+}
+form#custom-search-form{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.input-append input{
+  width: 100%;
+  width: 100%;
+  border: navajowhite;
+  border-bottom: 1px solid #6D6D6D;
+}
+button.btn.bt-search i{
+  position: absolute;
+  right: 0px;
+  bottom: 25px;
+  color: #6D6D6D;
 }
 /* ///////////////////////csss-thanh scoll /////////////
 }

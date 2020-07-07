@@ -6,7 +6,44 @@
     }
 
 @media (max-width: 1500px) {
-
+    .top-header-area {
+        margin-left: 34% ;
+        padding-top: 10px;
+    }
+    
+}
+@media (max-width: 1400px) {
+    .top-header-area {
+        margin-left: 32% ;
+        padding-top: 10px;
+    }
+    .classynav ul li{
+        margin: 0px 30px;
+    }
+    
+}
+@media (max-width: 1370px) {
+    .top-header-area {
+        margin-left: 28% ;
+        padding-top: 10px;
+    }
+    
+}
+@media (max-width: 1300px) {
+    .top-header-area {
+        margin-left: 26% !important ;
+        padding-top: 10px;
+    }
+    .classynav ul li {
+        margin: 0px 20px;
+    }
+    
+}
+@media (max-width: 1300px) {
+    .top-header-area {
+        margin-left: 24% !important ;
+        padding-top: 10px;
+    }
     
 }
 @media (max-width: 1200px) {
@@ -18,7 +55,7 @@
 }
 
 @media (max-width: 992px) {
-  	
+    
 
 }
 @media (max-width: 767px) {
@@ -30,6 +67,10 @@
     height: 60px;
     position: fixed;
     z-index: 9999999;
+    }
+    .d-mb-none{
+        display: none !important;
+        opacity: 0;
     }
     .mobile-hotline .mobile-hotline-left {
     width: 45%;
@@ -58,6 +99,14 @@
     line-height: 46px;
     font-size: 16px;
     font-weight: bold;
+    }
+    .d-mb-block{
+        display: flex;
+        margin-right: -100px ;
+    }
+    .box-center-slide{
+        margin-top: 0px !important;
+        width: 100%  !important;
     }
 
 }
@@ -95,7 +144,7 @@
         margin-bottom: 20px;
         margin-right: 0px;
     }
-    button.btnSubmit.supmit, .choose-us-thumbnail.mt-30.mb-80.bg-why{
+    button.btnSubmit.supmit, .choose-us-thumbnail.mt-30.mb-80.bg-why,.about-us-thumbnail.mb-80{
         margin-bottom: 20px;
     }
     .mb-30, a.btn.vingene-btn.mt-30.view-kt{
@@ -106,10 +155,9 @@
     }
     .about-us-content.mb-80 h3, .section-heading-why h2, 
     .section-heading-why h3,.why-content h4,.box-out-address h2,.title-kh h2,.b-contact h2 {
-        position: absolute;
         bottom: 0px;
         display: block;
-        font-size: 25px !important;
+        font-size: 18px !important;
 
     }
     .about-us-content.mb-80,.nav-tabs.no-bd{
@@ -148,7 +196,7 @@
         margin-bottom: 60px;
     }
     .single-welcome-slide .welcome-text h3,.single-welcome-slide .welcome-text h2{
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
     input.btn.vingene-btn.form-f{
         width: 100% !important;
@@ -156,7 +204,7 @@
     }
     .welcome-area .owl-nav .owl-next img,.welcome-area .owl-nav .owl-prev img{
         margin-top: 200px;
-        
+        width: 20px;
     }
     .nav-brand img{
         margin: 0px;
@@ -165,9 +213,7 @@
         margin-left: 37%;
     }
     .video_icon {
-        position: absolute;
-        top: 25%;
-        left: 40%;
+        left: 40% !important;
     }
     .header-area ul li a{
         background-color: transparent !important;
@@ -184,7 +230,7 @@
         display: block;
     }
     .box-pg h2,.title-content-ct h2{
-        font-size: 25px !important;
+        font-size: 18px !important;
     }
     .banne-gt img{
         height: 200px;
@@ -210,5 +256,93 @@
     .mt-20{
         text-align: center;
     }
+    
+    .header-area.sticky {
+        height: 60px !important;
+
+    }
+    .welcome-area form{
+        display: none;
+    }
+    .single-welcome-slide .welcome-text p{
+        font-size: 12px !important;
+    }
+    section.contact.bg-contact .contact-us{
+        padding-bottom: 0px !important;
+    }
+    .about-us-content.mb-30.why-content.box-out-address h5{
+        margin-bottom: 20px;
+    }
+     .about-us-content.mb-30.why-content.box-out-address h2{
+        margin-bottom: 15px;
+     }
+     .out-address .owl-nav .owl-prev,.out-address .owl-nav .owl-next{
+        display: none !important;
+     }
+     .open-time ul li{
+        padding-bottom: 0px;
+     }
+     .mt-88 {
+        margin-top: 63px !important;
+    }
+    .mt-42 {
+        margin-top: 15px !important;
+    }
+    select.favorites-select.dm-ct-kt {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    section.out-address.mgt-40.mb-40-kt{
+        margin-top: 0px;
+    }
 }
 
+@media screen and (min-width: 425px) and (max-width: 767px) { 
+    .header-area .top-header-area{
+        display: none !important;
+    }
+    .nav-brand img {
+        margin-bottom: 0px;
+        margin-left: 0;
+    }
+    .header-area.sticky{
+        height: 70px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+    .top-header-area {
+        margin-left: 0 !important;
+       margin-bottom: 20px !important;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    .top-header-area {
+        margin-left: 15% !important;
+        padding-top: 10px;
+    }
+    .classynav ul li {
+        display: inline-block;
+        clear: both;
+        margin: 0px 13px;
+        position: inherit;
+        z-index: 10;
+    }
+    .nav-brand img{
+        width: 70%;
+        margin-left: 0;
+    }
+
+    a.btn.vingene-btn.dky-top {
+        margin-bottom: 10px !important;
+        height: 30px;
+        line-height: 30px;
+    }
+}
+@media screen and (min-width: 1201) and (max-width: 1400px) { 
+  .breakpoint-off .classynav{
+    display: block;
+  }
+  .top-header-area{
+    margin-left: 23% !important;
+  }
+}
