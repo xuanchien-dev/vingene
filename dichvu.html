@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <title>Vingene</title>
-        <link rel="stylesheet" href="style.css" />
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>dich vu</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-<header class="wow fadeInDown">
+<body>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+<header class="header-area wow fadeInDown">
     <div class="main-header-area wow fadeInDown">
         <div class="classy-nav-container breakpoint-off">
             <div class="container-fluid">
@@ -21,7 +21,7 @@
                     <div class="h-100">
                         <div class="row h-100 align-items-center">
                             <div class="col-1"></div>
-                            <div class="">
+                            <div class="d-none d-md-block">
                                 <div class="top-header-content text-right">
                                     <div class="dc-address">
                                         <a href="" title="" class="btn dc-top active">Địa chỉ xét nhiệm</a>
@@ -29,56 +29,18 @@
                                 </div>
                             </div>
 
-                            <div class="">
+                            <div class="d-none d-md-block">
                                 <div class="kq-xn">
-                                    <a href="" title="" class="btn dc-top2" data-toggle="modal" data-target="#modalvd" >Kết quả xét nhiệm</a>
-
-                                    <div class="phieuketqua" id="phieuketqua">
-                                        <div class="title-phieuketqua">
-                                            <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
-
-                                            <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
-
-                                        </div>
-                                        <div class="content-phieuketqua">
-                                            <div class="item-content">
-                                                <strong>Họ và tên</strong>
-                                                <p>Nguyễn Thị Hà</p>
-                                            </div>
-
-                                            <div class="item-content">
-                                                <strong>Mã dịch vụ</strong>
-                                                <p>AAAAAAAAAA</p>
-                                            </div>
-                                            <div class="item-content">
-                                                <strong>Ngày sinh</strong>
-                                                <p>20/05/1980</p>
-                                            </div>
-                                            <div class="item-content">
-                                                <strong>Địa chỉ</strong>
-                                                <p>Địa chỉ</p>
-                                            </div>
-                                            <div class="item-content">
-                                                <strong>Kết quả</strong>
-                                                <p>Không phát hiện bất thường</p>
-                                            </div>
-                                        </div>
-                                        <div class="button-bottom">
-                                            <button type="button" class="btn btn-service">Chi tiết kết quả xét nghiệm<img src="img/imgchange/ketqua.png"> </button>
-
-                                        </div>
-                                    </div>
-
-
+                                    <a href="" title="" class="btn dc-top2">Kết quả xét nhiệm</a>
                                 </div>
                             </div>
 
-                            <div class=" form-top">
+                            <div class="form-top d-none d-md-block">
                                 <div id="custom-search-input">
                                     <div class="input-group col-md-12">
-                                        <input type="text" class="search-query form-control f-search" placeholder="Tìm kiếm"  />
+                                        <input type="text" class="search-query form-control f-search" placeholder="Tìm kiếm" />
                                         <div class="input-group-btn">
-                                            <button class="btn" type="supmit" data-toggle="modal" data-target="#Modal-search">
+                                            <button class="btn" type="supmit">
                                                 <span class="fa fa-search"></span>
                                             </button>
                                         </div>
@@ -86,12 +48,11 @@
                                 </div>
                             </div>
 
-
-                            <div class="" style="display: flex;">
+                            <div class="d-mb-none" style="display: flex;">
                                 <img src="img/vn.png" alt="" />
                                 <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
                                     <select class="tech" name="tech" id="tech">
-                                        <option value="VN" data-image="img/us.png">VN</option>
+                                        <option value="VN" url="img/us.png">VN</option>
                                         <option value="US" data-image="img/vn.png">US</option>
                                     </select>
                                 </form>
@@ -102,6 +63,15 @@
 
                 <nav class="classy-navbar justify-content-between" id="vingeneNav">
                     <a class="nav-brand" href="index.html"><img src="./img/logo.png" alt="" /></a>
+                    <div class="d-mb-block">
+                        <img src="img/vn.png" alt="" />
+                        <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
+                            <select class="tech" name="tech" id="tech">
+                                <option value="VN" url="img/us.png">VN</option>
+                                <option value="US" data-image="img/vn.png">US</option>
+                            </select>
+                        </form>
+                    </div>
                     <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
@@ -123,7 +93,19 @@
                             </ul>
 
                             <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
-                                <a href="#" class="btn vingene-btn dky-top"  data-toggle="modal" data-target="#popupdangkidichvu">Đăng kí Dịch Vụ</a>
+                                <a href="#" class="btn vingene-btn dky-top">Đăng kí Dịch Vụ</a>
+                            </div>
+                            <div class="form-top d-md-none d-block">
+                                <div id="custom-search-input">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="search-query form-control f-search" placeholder="Tìm kiếm" />
+                                        <div class="input-group-btn">
+                                            <button class="btn" type="supmit">
+                                                <span class="fa fa-search"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -134,58 +116,85 @@
         </div>
     </div>
 </header>
+<!-- Header Area End -->
 
-   <!-- &lt;!&ndash;HEADER&ndash;&gt;
-    <div class="header-img">
-        <img src="img/imgchange/headerimg.png" class="demo">
-    </div>
--->
-
-<!-- BANNER DICH VU -->
-    <div class="banner-service">
-        <div class="img-service">
-            <img src="img/imgchange/bannerdichvu.png">
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 banner-text-item text-light text-lg-left text-center">
-
-                                <ul>
-                                    <li><a href="">Trang chủ</a></li>
-                                    <li><a href="">Dịch vụ</a></li>
-                                </ul>
-                                <h2>DỊCH VỤ</h2>
-
+<!-- Welcome Area Start -->
+<section class="welcome-area wow rollIn mt-88">
+    <div class="banne-gt banner-blur">
+        <img src="img/imgchange/bannerbanggia.png" alt="" width="100%" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="box-pg">
+                        <div class="pagination-gt">
+                            <ul>
+                                <li>
+                                    <a href="">Trang chủ &ensp; | &ensp;</a>
+                                </li>
+                                <li><a href=""> Dịch vụ</a></li>
+                            </ul>
                         </div>
-
-
-                    </div>
-                </div>
-        </div>
-    </div>
-
- <!--SECTION ABOUT US-->
-    <div class="service-us">
-        <div class="img-serviceus">
-            <img src="img/imgchange/serviceus.png">
-            <div class="container">
-                <div class="row">
-                    <div class="service-us-content title-color">
-                        <div class="title-service-us">
-                            <h4>TỔNG QUAN</h4>
-                        </div>
-
-                        <h2>Xét nghiệm NIPT là gì?</h2>
-                        <p>Xét nghiệm NIPT là xét nghiệm sàng lọc ADN trước sinh không xâm lấn (còn gọi là xét nghiệm cell free DNA – cfDNA) giúp phát hiện các hội chứng liên quan đến bất thường về số lượng NST (thể dị bội) ở thai nhi qua máu mẹ, có kết quả chính xác cao.</p>
-                        <p>Trong quá trình mang thai, một lượng ADN của thai nhi được giải phóng và di chuyển tự do trong máu mẹ, người ta gọi các ADN này là ADN tự do (cfDNA). Với sự ra đời của máy giải trình tự ADN thế hệ mới và hệ thống siêu máy tính, các nhà khoa học Mỹ đã phát triển phương pháp phân tích cfDNA để chẩn đoán các bệnh di truyền của thai nhi mà không cần phải thực hiện các biện pháp can thiệp xâm lấn.</p>
-                        <p>Đây là xét nghiệm được Hiệp hội quốc tế về chẩn đoán trước khi sinh (International Society for Prenatal Diagnosis – ISPD) khuyến cáo là xét nghiệm đầu tiên cho tất cả các phụ nữ mang thai.</p>
-
+                        <br />
+                        <h2>dịch vụ</h2>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+    <div class="hotline">
+        <div class="btn-hotline-fx d-none d-md-block">
+            <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show" id="coccoc-alo-phoneIcon" style="/*left: 0px; top: calc(50% - -50px*/); display: block;">
+                <a href="tel:0979843527" target="_self">
+                    <div class="coccoc-alo-ph-circle"></div>
+                    <div class="coccoc-alo-ph-circle-fill"></div>
+                    <div class="coccoc-alo-ph-img-circle" data-toggle="modal" data-target="#dnntd"></div>
+                    <div class="title-btn-hotline">
+                        <!-- <span style="color: red">Hotline</span> <br>
+                        <span class="tel">0918256713</span> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hotline" style="">
+        <div class="btn-hotline-fx d-none d-md-block">
+            <div class="coccoc-alo-phone coccoc-alo-phone2 coccoc-alo-green coccoc-alo-show" id="coccoc-alo-phoneIcon" style="/*left: 0px; top: calc(50% - -50px*/); display: block;">
+                <a href="tel:0979843527" target="_self">
+                    <div class="coccoc-alo-ph-img-circle circle2" data-toggle="modal" data-target="#dnntd"></div>
+                    <div class="title-btn-hotline">
+                        <!-- <span style="color: red">Hotline</span> <br>
+                        <span class="tel">0918256713</span> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--SECTION ABOUT US-->
+<div class="service-us">
+    <div class="img-serviceus">
+        <img src="img/imgchange/serviceus.png">
+        <div class="container">
+            <div class="row">
+                <div class="service-us-content title-color">
+                    <div class="title-service-us">
+                        <h4>TỔNG QUAN</h4>
+                    </div>
+
+                    <h2>Xét nghiệm NIPT là gì?</h2>
+                    <p>Xét nghiệm NIPT là xét nghiệm sàng lọc ADN trước sinh không xâm lấn (còn gọi là xét nghiệm cell free DNA – cfDNA) giúp phát hiện các hội chứng liên quan đến bất thường về số lượng NST (thể dị bội) ở thai nhi qua máu mẹ, có kết quả chính xác cao.</p>
+                    <p>Trong quá trình mang thai, một lượng ADN của thai nhi được giải phóng và di chuyển tự do trong máu mẹ, người ta gọi các ADN này là ADN tự do (cfDNA). Với sự ra đời của máy giải trình tự ADN thế hệ mới và hệ thống siêu máy tính, các nhà khoa học Mỹ đã phát triển phương pháp phân tích cfDNA để chẩn đoán các bệnh di truyền của thai nhi mà không cần phải thực hiện các biện pháp can thiệp xâm lấn.</p>
+                    <p>Đây là xét nghiệm được Hiệp hội quốc tế về chẩn đoán trước khi sinh (International Society for Prenatal Diagnosis – ISPD) khuyến cáo là xét nghiệm đầu tiên cho tất cả các phụ nữ mang thai.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <!--POSTS SERVICE-->
 
@@ -269,79 +278,79 @@
 </div>
 
 
- <!--QUY TRINH XET NGHIEM: test-->
-    <div class="test-dervice">
-        <div class="img-test-dervice">
-           <!-- <img src="img/imgchange/quytrinh.png" class="img-test">-->
-            <div class="container">
-                <div class="row wow fadeInUp">
-                    <div class="test-dervice-item">
-
-                    </div>
-                    <div class="col-md-12 title-color text-center">
-                        <h2>QUY TRÌNH XÉT NGHIỆM</h2>
-                    </div>
-                    <div class="col-md col-6">
-                        <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="200ms">
-                            <div class="test-box">
-                                <img src="img/imgchange/test1.png">
-                                <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
-                            </div>
-                            <div class="test-img">
-                                <img src="img/imgchange/right.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md col-6">
-                        <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="400ms">
-                            <div class="test-box">
-                                <img src="img/imgchange/test2.png">
-                                <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
-                            </div>
-                            <div class="test-img">
-                                <img src="img/imgchange/right.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md col-6">
-                        <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="600ms">
-                            <div class="test-box">
-                                <img src="img/imgchange/test3.png">
-                                <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
-                            </div>
-                            <div class="test-img">
-                                <img src="img/imgchange/right.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md col-6">
-                        <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="800ms">
-                            <div class="test-box">
-                                <img src="img/imgchange/test4.png">
-                                <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
-                            </div>
-                            <div class="test-img">
-                                <img src="img/imgchange/right.png">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md col-6">
-                        <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="400ms">
-                            <div class="test-box">
-                                <img src="img/imgchange/test5.png">
-                                <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
-                            </div>
-
-                        </div>
-                    </div>
-
+<!--QUY TRINH XET NGHIEM: test-->
+<div class="test-dervice">
+    <div class="img-test-dervice">
+        <!-- <img src="img/imgchange/quytrinh.png" class="img-test">-->
+        <div class="container">
+            <div class="row wow fadeInUp">
+                <div class="test-dervice-item">
 
                 </div>
+                <div class="col-md-12 title-color text-center">
+                    <h2>QUY TRÌNH XÉT NGHIỆM</h2>
+                </div>
+                <div class="col-md col-6">
+                    <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="200ms">
+                        <div class="test-box">
+                            <img src="img/imgchange/test1.png">
+                            <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
+                        </div>
+                        <div class="test-img">
+                            <img src="img/imgchange/right.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-6">
+                    <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="400ms">
+                        <div class="test-box">
+                            <img src="img/imgchange/test2.png">
+                            <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
+                        </div>
+                        <div class="test-img">
+                            <img src="img/imgchange/right.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-6">
+                    <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="600ms">
+                        <div class="test-box">
+                            <img src="img/imgchange/test3.png">
+                            <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
+                        </div>
+                        <div class="test-img">
+                            <img src="img/imgchange/right.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-6">
+                    <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="800ms">
+                        <div class="test-box">
+                            <img src="img/imgchange/test4.png">
+                            <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
+                        </div>
+                        <div class="test-img">
+                            <img src="img/imgchange/right.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md col-6">
+                    <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="400ms">
+                        <div class="test-box">
+                            <img src="img/imgchange/test5.png">
+                            <p><strong>Tư vấn / đăng kí trước xét nghiệm</strong></p>
+                        </div>
+
+                    </div>
+                </div>
+
+
             </div>
         </div>
-
     </div>
+
+</div>
 
 <section class="contact bg-contact">
     <div class="bg-green"></div>
@@ -372,9 +381,11 @@
         </div>
     </div>
 </section>
-<section class="out-address mt-50 out-address-bg">
+
+
+<section class="out-address mt-50 bg-xn wow fadeInUp">
     <div class="container">
-        <div class="row wow fadeInUp">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="about-us-content mb-30 why-content box-out-address">
                     <h5>Our testing address</h5>
@@ -508,7 +519,6 @@
 </section>
 
 
-
 <!--Modal: modalYT-->
 <div class="modal fade" id="modalvd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -627,10 +637,11 @@
 
 
 
+
 <footer class="footer-area pdt-35">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-12 col-sm-4 col-md-4">
+            <div class="col-12 col-sm-4 col-md-4 wow fadeInUp">
                 <div class="single-footer-widget mb-80">
                     <!-- Footer Logo -->
                     <a href="#" class="footer-logo">
@@ -640,7 +651,7 @@
                     <div class="mb-30">
                         <div class="desc-footer">
                             <div class="d-flex">
-                                <img src="img/call.png" alt="" width="22px;" height="22px;" />
+                                <img src="img/Group 7234.png" alt="" width="22px;" height="22px;" />
                                 <p>
                                     <span>Địa chỉ:</span>
                                     <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
@@ -672,7 +683,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-2 col-xl-2 push-2">
+            <div class="col-12 col-sm-6 col-md-2 col-xl-2 push-2 wow fadeInUp">
                 <div class="single-footer-widget mb-80 mt-42">
                     <div class="open-time">
                         <ul>
@@ -694,7 +705,7 @@
             </div>
 
             <!-- Single Footer Widget -->
-            <div class="col-12 col-md-4 col-xl-4">
+            <div class="col-12 col-md-4 col-xl-4 wow fadeInUp">
                 <div class="single-footer-widget mb- mt-42">
                     <h4 class="widget-title">BẢN ĐỒ</h4>
                     <div class="contact-address">
@@ -704,7 +715,7 @@
             </div>
         </div>
     </div>
-    <div class="copy-right">
+    <div class="copy-right wow fadeInUp">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
@@ -717,23 +728,24 @@
         </div>
     </div>
 </footer>
+<!-- Footer Area End -->
 
+<div class="mobile-hotline">
+    <div class="mobile-hotline-left">
+        <a href="" class="wmCampaignShowPopup">Địa chỉ xét nhiệm</a>
+    </div>
+    <div class="mobile-hotline-right">
+        <a href="">Kết quả xét nghiệm</a>
+    </div>
+</div>
 
-
-
-
-
-
-
-
-
-
- <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/vingene.bundle.js"></script>
-        <script src="js/default-assets/chien.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vingene.bundle.js"></script>
+<script src="js/default-assets/chien.js"></script>
 <script src="js/default-assets/custom-tr.js"></script>
+
 <script>
 
     // When the user clicks on div, open the popup
@@ -743,6 +755,5 @@
     };
 
 </script>
-
 </body>
 </html>

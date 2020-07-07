@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <title>Vingene</title>
-        <link rel="stylesheet" href="style.css" />
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>bang gia chi tiet</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-<header class="wow fadeInDown">
+<body>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+<header class="header-area wow fadeInDown">
     <div class="main-header-area wow fadeInDown">
         <div class="classy-nav-container breakpoint-off">
             <div class="container-fluid">
@@ -21,7 +21,7 @@
                     <div class="h-100">
                         <div class="row h-100 align-items-center">
                             <div class="col-1"></div>
-                            <div class="">
+                            <div class="d-none d-md-block">
                                 <div class="top-header-content text-right">
                                     <div class="dc-address">
                                         <a href="" title="" class="btn dc-top active">Địa chỉ xét nhiệm</a>
@@ -29,56 +29,18 @@
                                 </div>
                             </div>
 
-                            <div class="">
+                            <div class="d-none d-md-block">
                                 <div class="kq-xn">
-                                    <a href="" title="" class="btn dc-top2" data-toggle="modal" data-target="#modalvd" >Kết quả xét nhiệm</a>
-
-                                    <div class="phieuketqua" id="phieuketqua">
-                                        <div class="title-phieuketqua">
-                                            <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
-
-                                            <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
-
-                                        </div>
-                                        <div class="content-phieuketqua">
-                                            <div class="item-content">
-                                                <strong>Họ và tên</strong>
-                                                <p>Nguyễn Thị Hà</p>
-                                            </div>
-
-                                            <div class="item-content">
-                                                <strong>Mã dịch vụ</strong>
-                                                <p>AAAAAAAAAA</p>
-                                            </div>
-                                            <div class="item-content">
-                                                <strong>Ngày sinh</strong>
-                                                <p>20/05/1980</p>
-                                            </div>
-                                            <div class="item-content">
-                                                <strong>Địa chỉ</strong>
-                                                <p>Địa chỉ</p>
-                                            </div>
-                                            <div class="item-content">
-                                                <strong>Kết quả</strong>
-                                                <p>Không phát hiện bất thường</p>
-                                            </div>
-                                        </div>
-                                        <div class="button-bottom">
-                                            <button type="button" class="btn btn-service">Chi tiết kết quả xét nghiệm<img src="img/imgchange/ketqua.png"> </button>
-
-                                        </div>
-                                    </div>
-
-
+                                    <a href="" title="" class="btn dc-top2">Kết quả xét nhiệm</a>
                                 </div>
                             </div>
 
-                            <div class=" form-top">
+                            <div class="form-top d-none d-md-block">
                                 <div id="custom-search-input">
                                     <div class="input-group col-md-12">
-                                        <input type="text" class="search-query form-control f-search" placeholder="Tìm kiếm"  />
+                                        <input type="text" class="search-query form-control f-search" placeholder="Tìm kiếm" />
                                         <div class="input-group-btn">
-                                            <button class="btn" type="supmit" data-toggle="modal" data-target="#Modal-search">
+                                            <button class="btn" type="supmit">
                                                 <span class="fa fa-search"></span>
                                             </button>
                                         </div>
@@ -86,12 +48,11 @@
                                 </div>
                             </div>
 
-
-                            <div class="" style="display: flex;">
+                            <div class="d-mb-none" style="display: flex;">
                                 <img src="img/vn.png" alt="" />
                                 <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
                                     <select class="tech" name="tech" id="tech">
-                                        <option value="VN" data-image="img/us.png">VN</option>
+                                        <option value="VN" url="img/us.png">VN</option>
                                         <option value="US" data-image="img/vn.png">US</option>
                                     </select>
                                 </form>
@@ -102,6 +63,15 @@
 
                 <nav class="classy-navbar justify-content-between" id="vingeneNav">
                     <a class="nav-brand" href="index.html"><img src="./img/logo.png" alt="" /></a>
+                    <div class="d-mb-block">
+                        <img src="img/vn.png" alt="" />
+                        <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
+                            <select class="tech" name="tech" id="tech">
+                                <option value="VN" url="img/us.png">VN</option>
+                                <option value="US" data-image="img/vn.png">US</option>
+                            </select>
+                        </form>
+                    </div>
                     <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>
@@ -123,7 +93,19 @@
                             </ul>
 
                             <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
-                                <a href="#" class="btn vingene-btn dky-top"  data-toggle="modal" data-target="#popupdangkidichvu">Đăng kí Dịch Vụ</a>
+                                <a href="#" class="btn vingene-btn dky-top">Đăng kí Dịch Vụ</a>
+                            </div>
+                            <div class="form-top d-md-none d-block">
+                                <div id="custom-search-input">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="search-query form-control f-search" placeholder="Tìm kiếm" />
+                                        <div class="input-group-btn">
+                                            <button class="btn" type="supmit">
+                                                <span class="fa fa-search"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -134,142 +116,62 @@
         </div>
     </div>
 </header>
+<!-- Header Area End -->
 
-<!--Modal: modalYT-->
-<div class="modal fade" id="modalvd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <!--Content-->
-
-        <div class="phieuketqua">
-            <div class="title-phieuketqua">
-                <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
-
-                <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
-
-            </div>
-
-            <div class="content-phieuketqua">
-                <table border="0">
-                    <tr class="item-content">
-                        <th><strong>Họ và tên</strong></th>
-                        <td><p>Nguyễn Thị Hà</p></td>
-                    </tr>
-                    <tr class="item-content">
-                        <th> <strong>Ngày sinh</strong></th>
-                        <td> <p>20/05/1980</p></td>
-                    </tr>
-                    <tr class="item-content">
-                        <th> <strong>Kết quả</strong></th>
-                        <td> <p>Không phát hiện bất thường</p></td>
-                    </tr>
-
-                </table>
-                <table border="0">
-                    <tr class="item-content">
-                        <th> <strong>Mã dịch vụ</strong></th>
-                        <td> <p>AAAAAAAAAA</p></td>
-                    </tr>
-                    <tr class="item-content">
-                        <th><strong>Địa chỉ</strong></th>
-                        <td> <p>Thanh Xuân</p></td>
-                    </tr>
-
-
-                </table>
-
-            </div>
-            <div class="button-bottom">
-                <button type="button" class="btn btn-service">Chi tiết kết quả xét nghiệm<img src="img/imgchange/ketqua.png"> </button>
-
-            </div>
-        </div>
-
-
-        <!--/.Content-->
-    </div>
-</div>
-
-<!--popup dang ki dich vu-->
-
-<!--Modal: modalYT-->
-<div class="modal fade" id="popupdangkidichvu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <!--Content-->
-
-        <div class="phieuketqua dangki" id="dangkidichvu">
-            <div class="title-phieuketqua title-dangki">
-                <h3>ĐĂNG KÍ XÉT NGHIỆM</h3>
-
-                <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
-
-            </div>
-
-            <div class="contact-us form-dangkixetnghiem">
-
-                <div class="contact-form">
-                    <input type="text" placeholder="Họ và tên" class="full-width">
-                    <input type="text" placeholder="Số điện thoại" class="part-width">
-                    <input type="text" placeholder="Email" class="part-width no-margin">
-                    <span class="icon-dangki">
-                            <input type="text" placeholder="dd/mm/yy" class="calendar">
-                            <img src="img/imgchange/calendar.png">
-                        </span>
-                    <span class="icon-dangki">
-                           <input type="text" placeholder="Khu vực" class="no-margin address">
-                            <img src="img/imgchange/address.png">
-                        </span>
-
-                    <div class="fix-icon">
-                            <span class="icon-select">
-                            <select name="choose-service" id="choose-service" class="choose-service">
-                                <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
-                                <option value="s2" class="choose-option">Gói 01</option>
-                                <option value="s3" class="choose-option">Gói Plus</option>
-                                <option value="s4" class="choose-option">Gói Pro</option>
-                            </select>
-                                 <img src="img/imgchange/bottom.png">
-                                <!--   <i class="fal fa-long-arrow-down"></i>-->
-                                </span>
+<!-- Welcome Area Start -->
+<section class="welcome-area wow rollIn mt-88">
+    <div class="banne-gt banner-blur">
+        <img src="img/imgchange/bannerbanggia.png" alt="" width="100%" />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="box-pg">
+                        <div class="pagination-gt">
+                            <ul>
+                                <li>
+                                    <a href="">Trang chủ &ensp; | &ensp;</a>
+                                </li>
+                                <li><a href=""> Bảng giá</a></li>
+                            </ul>
+                        </div>
+                        <br />
+                        <h2>Bảng giá</h2>
                     </div>
-
-
-
                 </div>
-
-
-            </div>
-            <div class="button-bottom button-dangkixetnghiem">
-                <button type="button" class="btn btn-service">Đăng kí<img src="img/imgchange/guidi.png"> </button>
-                <button type="button" class="btn btn-clear">Làm lại<img src="img/imgchange/lamlai.png"></button>
             </div>
         </div>
-
-        <!--/.Content-->
     </div>
-</div>
-
-
-<!-- BANNER DICH VU -->
-<div class="banner-service banner-price">
-    <!--  <div class="img-service">
-          <img src="images/bannerdichvu.png">
-      </div>-->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 banner-text-item text-light text-lg-left text-center">
-
-                <ul>
-                    <li><a href="">Trang chủ</a></li>
-                    <li><a href="">Bảng giá chi tiết</a></li>
-                </ul>
-                <h2>BẢNG GIÁ CHI TIẾT</h2>
-
+    <div class="hotline">
+        <div class="btn-hotline-fx d-none d-md-block">
+            <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show" id="coccoc-alo-phoneIcon" style="/*left: 0px; top: calc(50% - -50px*/); display: block;">
+                <a href="tel:0979843527" target="_self">
+                    <div class="coccoc-alo-ph-circle"></div>
+                    <div class="coccoc-alo-ph-circle-fill"></div>
+                    <div class="coccoc-alo-ph-img-circle" data-toggle="modal" data-target="#dnntd"></div>
+                    <div class="title-btn-hotline">
+                        <!-- <span style="color: red">Hotline</span> <br>
+                        <span class="tel">0918256713</span> -->
+                    </div>
+                </a>
             </div>
-
-
         </div>
     </div>
-</div>
+
+    <div class="hotline" style="">
+        <div class="btn-hotline-fx d-none d-md-block">
+            <div class="coccoc-alo-phone coccoc-alo-phone2 coccoc-alo-green coccoc-alo-show" id="coccoc-alo-phoneIcon" style="/*left: 0px; top: calc(50% - -50px*/); display: block;">
+                <a href="tel:0979843527" target="_self">
+                    <div class="coccoc-alo-ph-img-circle circle2" data-toggle="modal" data-target="#dnntd"></div>
+                    <div class="title-btn-hotline">
+                        <!-- <span style="color: red">Hotline</span> <br>
+                        <span class="tel">0918256713</span> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!--BAI VIET-->
 <div class="post-price price-detail">
@@ -310,7 +212,7 @@
                 <h4>Chính sách hỗ trợ sau xét nghiệm</h4>
                 <p><strong>Phát hiện bất thường NST:</strong>hỗ trợ 5 triệu đồng để khẳng định kết quả bằng xét nghiệm chẩn đoán (chọc ối và làm karyotype). Thai phụ sau khi làm chọc ối và karyotype tại các cơ sở y tế để đảm bảo tính khách quan, chỉ cần gửi lại cho Vincibio hình ảnh hóa đơn và kết quả xét nghiệm, Vincibio sẽ ngay lập tức chuyển tiền hỗ trợ.
                 </p>
-                 <p><strong>Phát hiện mẹ mang gene gây bệnh có thể truyền cho con Thalassemia và 4 bệnh di truyền khác:</strong>miễn phí xét nghiệm cho chồng và bé sau khi sinh. </p>
+                <p><strong>Phát hiện mẹ mang gene gây bệnh có thể truyền cho con Thalassemia và 4 bệnh di truyền khác:</strong>miễn phí xét nghiệm cho chồng và bé sau khi sinh. </p>
                 <p><strong>Không phát hiện bất thường: </strong>Hỗ trợ 200 triệu đồng nếu sau sinh trẻ mang các trisomy 13, 18, 21 đã phân tích (xác nhận bằng karyotype).</p>
                 <p>   Trong trường hợp kết quả pro+ không phát hiện bất thường nhưng trong quá trình siêu âm, bác sĩ nghi ngờ thai nhi mắc Down, Edwards hoặc Patau; thai phụ và bác sĩ không yên tâm có thể thực hiện chọc ối và xét nghiệm chẩn đoán. Nếu kết quả chọc ối khác kết quả proNIPT thì VINGENE sẽ hỗ trợ 30 triệu đồng.</p>
             </div>
@@ -390,17 +292,17 @@
                                 <button type="button" class="btn btn-service">ĐĂNG KÍ NGAY</button>
 
 
+                            </div>
+
                         </div>
+
 
                     </div>
 
 
+
+
                 </div>
-
-
-
-
-        </div>
                 <div class="col-md-12 price-tabs3">
                     <div class="price-item">
                         <div class="box-price-item">
@@ -451,8 +353,8 @@
 
                 </div>
             </div>
+        </div>
     </div>
-</div>
 </div>
 
 
@@ -533,8 +435,7 @@
 
 </div>
 
-
-<section class="vingene-portfolio vingene-portfolio-fix clearfix">
+<section class="vingene-portfolio pd-t40 clearfix wow fadeInUp">
     <div class="container">
         <div class="row wow fadeInUp">
             <div class="col-xs-3 col-sm-4 col-md-3 col-lg-3">
@@ -543,7 +444,7 @@
                     <h2>Kiến thức</h2>
                 </div>
             </div>
-            <div class="col-xs-9 col-sm-8 col-md-9 col-lg-9 menu-tab">
+            <div class="col-xs-9 col-sm-8 col-md-9 col-lg-9 menu-tab d-none d-md-block">
                 <ul class="nav nav-tabs no-bd">
                     <li class="active"><a data-toggle="tab" href="#home">Kiến thức ADN</a></li>
                     <li><a data-toggle="tab" href="#menu1">Phân tích di truyền</a></li>
@@ -551,12 +452,20 @@
                     <li><a href="" class="btn vingene-btn mt-30 a-view all-view">Xem tất cả</a></li>
                 </ul>
             </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 d-md-none d-block ">
+                <select name="favorites" class="favorites-select">
+                    <option value="kt">Kiến thức ADN</option>
+                    <option value="pt">Phân tích di truyền</option>
+                    <option selected value="cd">Chuẩn đoạn ung thư</option>
+                    <option value="v">Xem tất cả</option>
+                </select>
+            </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="tab-content">
                     <div id="home" class="tab-pane in active">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-post-area mb-80">
+                                <div class="single-post-area mb-40">
                                     <div class="post-thumbnail zoom">
                                         <a href="">
                                             <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -578,7 +487,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-post-area mb-80">
+                                <div class="single-post-area mb-40">
                                     <div class="post-thumbnail zoom">
                                         <a href="">
                                             <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -600,7 +509,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-post-area mb-80">
+                                <div class="single-post-area mb-40">
                                     <div class="post-thumbnail zoom">
                                         <a href="">
                                             <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -625,7 +534,7 @@
                     <div id="menu1" class="tab-pane fade">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-post-area mb-80">
+                                <div class="single-post-area mb-mb-40">
                                     <div class="post-thumbnail zoom">
                                         <a href="">
                                             <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -647,7 +556,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-post-area mb-80">
+                                <div class="single-post-area mb-40">
                                     <div class="post-thumbnail zoom">
                                         <a href="">
                                             <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -672,7 +581,7 @@
                     <div id="menu2" class="tab-pane fade">
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
-                                <div class="single-post-area mb-80">
+                                <div class="single-post-area mb-40">
                                     <div class="post-thumbnail zoom">
                                         <a href="">
                                             <img src="img/kt-img.png" alt="" class="thumbnail-zoom" />
@@ -697,8 +606,10 @@
                 </div>
             </div>
         </div>
+
     </div>
 </section>
+
 <section class="contact bg-contact">
     <div class="bg-green"></div>
     <div class="container">
@@ -733,11 +644,10 @@
 
 
 
-
 <footer class="footer-area pdt-35">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-12 col-sm-4 col-md-4">
+            <div class="col-12 col-sm-4 col-md-4 wow fadeInUp">
                 <div class="single-footer-widget mb-80">
                     <!-- Footer Logo -->
                     <a href="#" class="footer-logo">
@@ -747,7 +657,7 @@
                     <div class="mb-30">
                         <div class="desc-footer">
                             <div class="d-flex">
-                                <img src="img/call.png" alt="" width="22px;" height="22px;" />
+                                <img src="img/Group 7234.png" alt="" width="22px;" height="22px;" />
                                 <p>
                                     <span>Địa chỉ:</span>
                                     <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
@@ -779,7 +689,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-2 col-xl-2 push-2">
+            <div class="col-12 col-sm-6 col-md-2 col-xl-2 push-2 wow fadeInUp">
                 <div class="single-footer-widget mb-80 mt-42">
                     <div class="open-time">
                         <ul>
@@ -801,7 +711,7 @@
             </div>
 
             <!-- Single Footer Widget -->
-            <div class="col-12 col-md-4 col-xl-4">
+            <div class="col-12 col-md-4 col-xl-4 wow fadeInUp">
                 <div class="single-footer-widget mb- mt-42">
                     <h4 class="widget-title">BẢN ĐỒ</h4>
                     <div class="contact-address">
@@ -811,7 +721,7 @@
             </div>
         </div>
     </div>
-    <div class="copy-right">
+    <div class="copy-right wow fadeInUp">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
@@ -826,11 +736,21 @@
 </footer>
 <!-- Footer Area End -->
 
- <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/vingene.bundle.js"></script>
-        <script src="js/default-assets/chien.js"></script>
+<div class="mobile-hotline">
+    <div class="mobile-hotline-left">
+        <a href="" class="wmCampaignShowPopup">Địa chỉ xét nhiệm</a>
+    </div>
+    <div class="mobile-hotline-right">
+        <a href="">Kết quả xét nghiệm</a>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vingene.bundle.js"></script>
+<script src="js/default-assets/chien.js"></script>
 <script src="js/default-assets/custom-tr.js"></script>
+
 </body>
 </html>

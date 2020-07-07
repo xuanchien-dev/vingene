@@ -33,10 +33,31 @@
         padding-bottom: 15px;
     }
 
-
-
-
-
+    .phieuketqua{
+        width: 350px;
+    }
+    .contact-us .container-fluid .contact-form{
+        width: 100%;
+        padding-right:15px;
+    }
+    .address-service{
+        margin-top:100px;
+    }
+    .contact-us .banner-text-item{
+        margin-bottom: 30px;
+    }
+    .out-address{
+        margin-bottom: 30px;
+    }
+    .service-advisory{
+        margin-top:30px !important;
+    }
+    .post-price{
+        padding-top:30px;
+    }
+    .price{
+        padding-top:30px;
+    }
 
 }
 
