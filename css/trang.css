@@ -197,7 +197,18 @@
     background-color: #eef4f1;
     border-radius: 22px;
 }
-
+/* banner */
+.banner-blur{
+    position: relative;
+}
+.banner-blur:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height:100%;
+    background-color:#00000042;
+    top:0;
+}
 
 
 
