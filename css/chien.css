@@ -299,6 +299,7 @@ button.btnSubmit.supmit {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
+  background-position: left 19px bottom -86px;
 }
 .about-us-content.mb-80 h5,.about-us-content.mb-30 h5 {
     font-weight: bold;
@@ -483,10 +484,15 @@ a.popup-video.video_play_button {
   margin: 0 auto;
   margin-bottom: 0px !important;
 }
-.bg-ray,.bg-xn{
-  background-image: url('../img/bg-xoc.png');
+.bg-ray{
+  background-image: url('../img/toi-co.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: left -112px top -64px;
+}
+.bg-xn{
+  background-image: url('../img/diachi.png');
+  background-repeat: no-repeat;
+  background-position:  left 0px top 0px;
 }
 /** :: 16.0 Service CSS */
 .single-service-area {
@@ -818,6 +824,7 @@ a.popup-video.video_play_button {
   border: 1px solid #CFCFCF;
   border-radius: 8px;
   padding: 35px 20px;
+  background-color: #fff;
 }
 
 .box-slide-l h3{

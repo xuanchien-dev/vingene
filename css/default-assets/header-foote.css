@@ -207,7 +207,8 @@ a.btn.dc-top:before{
 }
 .classy-nav-container .classy-navbar .classynav ul li a:focus,
 .classy-nav-container .classy-navbar .classynav ul li a:hover {
-    color: #25A568;
+    color:#8CC63F ;
+    font-weight: bold;
 }
 .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a,
 .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
