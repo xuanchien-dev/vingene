@@ -57,10 +57,12 @@
     width:35%;
 }
 .dcxn-items select{
-    width: 135px;
+
     border: none;
     border-bottom: 1px solid #C5C8CA;
     color: #6D6D6D;
+    font-family: light;
+    font-weight: 700;
 }
 .dcxn-items input{
     border-bottom: 1px solid #C5C8CA;
@@ -81,8 +83,8 @@
 .dcxn-button{
     float:left;
     background-color: #ECECEC;
-    padding-top:27px;
-    padding-bottom: 14px;
+    padding-top:24px;
+    padding-bottom: 17px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
