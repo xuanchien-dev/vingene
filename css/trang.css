@@ -391,7 +391,10 @@
     border-radius: 50px;
     width:70%;
 }
-
+.pagination-gt{
+    float: left;
+    width: 100%;
+}
 
 
 
