@@ -13,8 +13,21 @@
     border-radius: 100px;
 }
 .address-service{
-   margin-top:172px;
+   margin-top:85px;
     margin-bottom: 41px;
+}
+.address-service .btn-service{
+    font-size: 14px;
+    color: #fff;
+    background-color: #056839;
+    background-image: url(../../img/imgchange/bgbutton.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    font-family: SemiBold;
+    font-weight: bold;
+    text-shadow: none;
 }
 .diachixetnghiem .dcxn-title{
     background-color: #8cc63f4a;
@@ -40,8 +53,8 @@
 .dcxn-items p{
     color: #056839;
     font-weight: 700;
-    margin-right: 15px;
     float:left;
+    width:35%;
 }
 .dcxn-items select{
     width: 135px;
@@ -54,13 +67,10 @@
     border-top: none;
     border-right: none;
     border-left: none;
-    width:129px;
+    width:65%;
 }
-#choose1{
-    width:135px;
-}
-#choose2{
-    width:95px;
+#choose1, #choose2{
+    width:65%;
 }
 #choose2:focus, #choose1:focus{
     outline: none;
@@ -105,13 +115,57 @@
     margin-top: -8px;
     z-index: -1;
 }
-.address-diachi{
-    margin-bottom: 100px;
+.address-diachi .box-address-item .box-item{
+    border: 1px solid #CFCFCF;
+    border-radius: 8px;
+    padding: 30px 0px 30px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-
-
-
-
+.address-diachi .box-address-item .box-item:hover{
+    box-shadow: 0px 3px 15px #00000029;
+    transition: 0.5s;
+    border:none;
+}
+.address-diachi .box-address-item .box-item h3{
+    position: relative;
+    color: #056839;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.address-diachi .box-address-item .box-item h3:before{
+    content: url(../../img/icon-map.png);
+    background-repeat: no-repeat;
+    bottom: 0px;
+    left: 0px;
+    margin-right: 10px;
+}
+.address-diachi .box-address-item-icon span:first-child{
+    width: 45px;
+    height: 3px;
+    background-color: #8CC63F;
+    display: inline-block;
+    border-radius: 4px;
+}
+.address-diachi .box-address-item-icon span:nth-child(2){
+    width: 27px;
+    height: 3px;
+    background-color: #056839;
+    display: inline-block;
+    border-radius: 4px;
+}
+.address-diachi .box-address-item-icon span:last-child{
+    width: 27px;
+    height: 3px;
+    background-color: #056839;
+    display: inline-block;
+    border-radius: 4px;
+}
+.header-bottom{
+    height:auto;
+}
 
 
 

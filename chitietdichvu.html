@@ -31,7 +31,7 @@
 
                             <div class="d-none d-md-block">
                                 <div class="kq-xn">
-                                    <a href="" title="" class="btn dc-top2">Kết quả xét nhiệm</a>
+                                    <a href="" title="" class="btn dc-top2" data-toggle="modal" data-target="#popupkq-xn">Kết quả xét nhiệm</a>
                                 </div>
                             </div>
 
@@ -93,7 +93,7 @@
                             </ul>
 
                             <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
-                                <a href="#" class="btn vingene-btn dky-top">Đăng kí Dịch Vụ</a>
+                                <a href="#" class="btn vingene-btn dky-top" data-toggle="modal" data-target="#popupdk-dv">Đăng kí Dịch Vụ</a>
                             </div>
                             <div class="form-top d-md-none d-block">
                                 <div id="custom-search-input">
@@ -118,10 +118,133 @@
 </header>
 <!-- Header Area End -->
 
+
+<!--POPUP-->
+<!--Modal: modalYT-->
+<div class="modal modal-bgcl fade" id="popupkq-xn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="phieuketqua">
+                <div class="title-phieuketqua">
+                    <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
+
+                    <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
+
+                </div>
+
+                <div class="content-phieuketqua">
+                    <table border="0">
+                        <tr class="item-content">
+                            <th><strong>Họ và tên</strong></th>
+                            <td><p>Nguyễn Thị Hà</p></td>
+                        </tr>
+                        <tr class="item-content">
+                            <th> <strong>Ngày sinh</strong></th>
+                            <td> <p>20/05/1980</p></td>
+                        </tr>
+                        <tr class="item-content">
+                            <th> <strong>Kết quả</strong></th>
+                            <td> <p>Không phát hiện bất thường</p></td>
+                        </tr>
+
+                    </table>
+                    <table border="0">
+                        <tr class="item-content">
+                            <th> <strong>Mã dịch vụ</strong></th>
+                            <td> <p>AAAAAAAAAA</p></td>
+                        </tr>
+                        <tr class="item-content">
+                            <th><strong>Địa chỉ</strong></th>
+                            <td> <p>Thanh Xuân</p></td>
+                        </tr>
+
+
+                    </table>
+
+                </div>
+                <div class="button-bottom">
+                    <button type="button" class="btn btn-service">Chi tiết kết quả xét nghiệm<img src="img/imgchange/ketqua.png"> </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal modal-bgcl fade" id="popupdk-dv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="phieuketqua dangki" id="dangkidichvu">
+                <div class="title-phieuketqua title-dangki">
+                    <h3>ĐĂNG KÍ XÉT NGHIỆM</h3>
+
+                    <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
+
+                </div>
+
+                <div class="contact-us form-dangkixetnghiem">
+
+                    <div class="contact-form">
+                        <input type="text" placeholder="Họ và tên" class="full-width">
+                        <input type="text" placeholder="Số điện thoại" class="part-width">
+                        <input type="text" placeholder="Email" class="part-width no-margin">
+
+                        <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                            <input class="form-control" readonly="" type="text">
+                            <span class="input-group-addon">
+                         <img src="img/imgchange/calendar.png">
+                    </span>
+                        </div>
+
+                        <div class="fix-icon icon-dangki dangki-kv">
+                            <span class="icon-select">
+                            <select name="choose-service" id="choose-kv" class="choose-service">
+                                <option value="s1" class="choose-option">Khu vực</option>
+                                <option value="s2" class="choose-option">Hà Nội</option>
+                                <option value="s3" class="choose-option">Đà Nẵng</option>
+                            </select>
+                                 <img src="img/imgchange/address.png">
+                                <!--   <i class="fal fa-long-arrow-down"></i>-->
+                                </span>
+                        </div>
+                        <div class="fix-icon">
+                            <span class="icon-select">
+                            <select name="choose-service" id="choose-service" class="choose-service">
+                                <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
+                                <option value="s2" class="choose-option">Gói 01</option>
+                                <option value="s3" class="choose-option">Gói Plus</option>
+                                <option value="s4" class="choose-option">Gói Pro</option>
+                            </select>
+                                 <img src="img/imgchange/bottom.png">
+                                <!--   <i class="fal fa-long-arrow-down"></i>-->
+                                </span>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="button-bottom button-dangkixetnghiem">
+                    <button type="button" class="btn btn-service">Đăng kí<img src="img/imgchange/guidi.png"> </button>
+                    <button type="button" class="btn btn-clear">Làm lại<img src="img/imgchange/lamlai.png"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
 <!-- Welcome Area Start -->
 <section class="welcome-area wow rollIn mt-88">
     <div class="banne-gt banner-blur">
-        <img src="img/imgchange/bannerbanggia.png" alt="" width="100%" />
+        <img src="img/imgchange/bannerdichvu.png" alt="" width="100%" />
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -271,7 +394,7 @@
 
 <!--CAC BENH-->
 
-<div class="sick-service">
+<div class="sick-service sick-service-moblie">
     <div class="container">
         <div class="row wow fadeInUp">
             <div class="col-md-6 box-item">
@@ -408,59 +531,8 @@
         </div>
     </div>
 </div>
-<!--
-
-&lt;!&ndash;CHU KY TUAN THAI KI&ndash;&gt;
-<div class="text-image">
-    <div class="container">
-        <div class="row wow fadeInUp">
-            <div class="col-md-6 img-left-posi">
-                <div class="img-left">
-                    <p><strong>Double test<br>Triple test</strong></p>
-                    <p><strong>Phụ nữ mang thai <br>trên 35 tuổi</strong></p>
-                    <p><strong>Có tiền sử sinh con <br>Dị tật / sảy thai</strong></ <br>>
-                    <div class="tuanthaiki">
-                        <h4>Tuần thai kì</h4>
-                        <ul>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li>13</li>
-                            <li>14</li>
-                            <li>15</li>
-                            <li>16</li>
-                            <li>17</li>
-                            <li>18</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="col-md-6 text-item-right">
-                <h3>Tôi có phù hợp với</h3>
-                <h2>Xét nghiệm này?</h2>
-                <p>Vingene khuyên thực hiện cho tất cả các thai phụ ngay từ tuần thai thứ 10 thai kỳ, đặc biệt là những thai phụ có nguy cơ cao sinh con mắc phải những hội chứng di truyền như:</p>
-                <ul>
-                    <li> Có kết quả Double test và/hoặc Triple test nguy cơ cao</li>
-                    <li>Phụ nữ mang thai từ tuổi 35 trở lên</li>
-                    <li>Có tiền sử sinh con dị tật/ đã từng sảy thai</li>
-                    <li>Các trường hợp thai lưu, mang thai dị dạng, thai chết lưu không rõ nguyên nhân</li>
-                    <li>Có kết quả siêu âm bất thường</li>
-                    <li>Có thực hiện kỹ thuật hỗ trợ sinh sản (IVF) Mang thai đôi…</li>
-
-
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
--->
-
 <!-- Why Choose NPI -->
-<section class="why-choose-us-area bg-gray wow fadeInUp bg-ray">
+<section class="why-choose-us-area why-choose-us-area-mobile bg-gray wow fadeInUp bg-ray">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-12 col-lg-6">
@@ -513,7 +585,6 @@
 <!-- Why Choose Us Area End -->
 
 
-
 <!--QUY TRINH XET NGHIEM: test-->
 <div class="test-dervice">
     <div class="img-test-dervice">
@@ -526,7 +597,7 @@
                 <div class="col-md-12 title-color text-center">
                     <h2>QUY TRÌNH XÉT NGHIỆM</h2>
                 </div>
-                <div class="col-md col-6">
+                <div class="col-md col-12">
                     <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="200ms">
                         <div class="test-box">
                             <img src="img/imgchange/test1.png">
@@ -537,7 +608,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md col-6">
+                <div class="col-md col-12">
                     <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="400ms">
                         <div class="test-box">
                             <img src="img/imgchange/test2.png">
@@ -548,7 +619,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md col-6">
+                <div class="col-md col-12">
                     <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="600ms">
                         <div class="test-box">
                             <img src="img/imgchange/test3.png">
@@ -559,7 +630,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md col-6">
+                <div class="col-md col-12">
                     <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="800ms">
                         <div class="test-box">
                             <img src="img/imgchange/test4.png">
@@ -571,7 +642,7 @@
                     </div>
                 </div>
 
-                <div class="col-md col-6">
+                <div class="col-md col-12">
                     <div class="test-box-item text-center wow fadeInLeft" data-wow-delay="400ms">
                         <div class="test-box">
                             <img src="img/imgchange/test5.png">
@@ -649,7 +720,9 @@
         </div>
     </div>
 </section>
-<section class="out-address mt-50">
+
+
+<section class="out-address out-address-bottom mt-50 bg-xn wow fadeInUp">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -783,6 +856,7 @@
         </div>
     </div>
 </section>
+
 
 <!--Modal: modalYT-->
 <div class="modal fade" id="modalvd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -933,6 +1007,18 @@
 <script src="js/vingene.bundle.js"></script>
 <script src="js/default-assets/chien.js"></script>
 <script src="js/default-assets/custom-tr.js"></script>
+
+<link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"><script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#datepicker").datepicker({
+            autoclose: true,
+            todayHighlight: true
+        }).datepicker('update', new Date());
+    });
+</script>
 
 <script>
 

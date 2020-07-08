@@ -31,7 +31,7 @@
 
                             <div class="d-none d-md-block">
                                 <div class="kq-xn">
-                                    <a href="" title="" class="btn dc-top2">Kết quả xét nhiệm</a>
+                                    <a href="" title="" class="btn dc-top2" data-toggle="modal" data-target="#popupkq-xn">Kết quả xét nhiệm</a>
                                 </div>
                             </div>
 
@@ -93,7 +93,7 @@
                             </ul>
 
                             <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
-                                <a href="#" class="btn vingene-btn dky-top">Đăng kí Dịch Vụ</a>
+                                <a href="#" class="btn vingene-btn dky-top" data-toggle="modal" data-target="#popupdk-dv">Đăng kí Dịch Vụ</a>
                             </div>
                             <div class="form-top d-md-none d-block">
                                 <div id="custom-search-input">
@@ -117,6 +117,129 @@
     </div>
 </header>
 <!-- Header Area End -->
+
+
+<!--POPUP-->
+<!--Modal: modalYT-->
+<div class="modal modal-bgcl fade" id="popupkq-xn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="phieuketqua">
+                <div class="title-phieuketqua">
+                    <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
+
+                    <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
+
+                </div>
+
+                <div class="content-phieuketqua">
+                    <table border="0">
+                        <tr class="item-content">
+                            <th><strong>Họ và tên</strong></th>
+                            <td><p>Nguyễn Thị Hà</p></td>
+                        </tr>
+                        <tr class="item-content">
+                            <th> <strong>Ngày sinh</strong></th>
+                            <td> <p>20/05/1980</p></td>
+                        </tr>
+                        <tr class="item-content">
+                            <th> <strong>Kết quả</strong></th>
+                            <td> <p>Không phát hiện bất thường</p></td>
+                        </tr>
+
+                    </table>
+                    <table border="0">
+                        <tr class="item-content">
+                            <th> <strong>Mã dịch vụ</strong></th>
+                            <td> <p>AAAAAAAAAA</p></td>
+                        </tr>
+                        <tr class="item-content">
+                            <th><strong>Địa chỉ</strong></th>
+                            <td> <p>Thanh Xuân</p></td>
+                        </tr>
+
+
+                    </table>
+
+                </div>
+                <div class="button-bottom">
+                    <button type="button" class="btn btn-service">Chi tiết kết quả xét nghiệm<img src="img/imgchange/ketqua.png"> </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal modal-bgcl fade" id="popupdk-dv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="phieuketqua dangki" id="dangkidichvu">
+                <div class="title-phieuketqua title-dangki">
+                    <h3>ĐĂNG KÍ XÉT NGHIỆM</h3>
+
+                    <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
+
+                </div>
+
+                <div class="contact-us form-dangkixetnghiem">
+
+                    <div class="contact-form">
+                        <input type="text" placeholder="Họ và tên" class="full-width">
+                        <input type="text" placeholder="Số điện thoại" class="part-width">
+                        <input type="text" placeholder="Email" class="part-width no-margin">
+
+                        <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                            <input class="form-control" readonly="" type="text">
+                            <span class="input-group-addon">
+                         <img src="img/imgchange/calendar.png">
+                    </span>
+                        </div>
+
+                        <div class="fix-icon icon-dangki dangki-kv">
+                            <span class="icon-select">
+                            <select name="choose-service" id="choose-kv" class="choose-service">
+                                <option value="s1" class="choose-option">Khu vực</option>
+                                <option value="s2" class="choose-option">Hà Nội</option>
+                                <option value="s3" class="choose-option">Đà Nẵng</option>
+                            </select>
+                                 <img src="img/imgchange/address.png">
+                                <!--   <i class="fal fa-long-arrow-down"></i>-->
+                                </span>
+                        </div>
+                        <div class="fix-icon">
+                            <span class="icon-select">
+                            <select name="choose-service" id="choose-service" class="choose-service">
+                                <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
+                                <option value="s2" class="choose-option">Gói 01</option>
+                                <option value="s3" class="choose-option">Gói Plus</option>
+                                <option value="s4" class="choose-option">Gói Pro</option>
+                            </select>
+                                 <img src="img/imgchange/bottom.png">
+                                <!--   <i class="fal fa-long-arrow-down"></i>-->
+                                </span>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="button-bottom button-dangkixetnghiem">
+                    <button type="button" class="btn btn-service">Đăng kí<img src="img/imgchange/guidi.png"> </button>
+                    <button type="button" class="btn btn-clear">Làm lại<img src="img/imgchange/lamlai.png"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
 
 <!-- Welcome Area Start -->
 <section class="welcome-area wow rollIn mt-88">
@@ -161,7 +284,7 @@
         <div class="btn-hotline-fx d-none d-md-block">
             <div class="coccoc-alo-phone coccoc-alo-phone2 coccoc-alo-green coccoc-alo-show" id="coccoc-alo-phoneIcon" style="/*left: 0px; top: calc(50% - -50px*/); display: block;">
                 <a href="tel:0979843527" target="_self">
-                    <div class="coccoc-alo-ph-img-circle circle2" data-toggle="modal" data-target="#dnntd"></div>
+                    <div class="coccoc-alo-ph-img-circle circle2 coccoc-mt" data-toggle="modal" data-target="#dnntd"></div>
                     <div class="title-btn-hotline">
                         <!-- <span style="color: red">Hotline</span> <br>
                         <span class="tel">0918256713</span> -->
@@ -452,6 +575,18 @@
 <script src="js/vingene.bundle.js"></script>
 <script src="js/default-assets/chien.js"></script>
 <script src="js/default-assets/custom-tr.js"></script>
+
+<link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"><script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+
+<script type="text/javascript">
+    $(function () {
+        $("#datepicker").datepicker({
+            autoclose: true,
+            todayHighlight: true
+        }).datepicker('update', new Date());
+    });
+</script>
 
 <script>
 
