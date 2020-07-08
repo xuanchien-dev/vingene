@@ -378,6 +378,10 @@
     font-family: light;
     font-weight: 700;
 }
+#datepicker input:focus{
+    border-color:#056839;
+    box-shadow: 0 0 0 0.2rem #106a3f12;
+}
 #datepicker .input-group-addon{
     position: absolute;
     right: 14px;
