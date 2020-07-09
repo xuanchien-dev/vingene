@@ -138,9 +138,10 @@ p{
     font-size: 19px;
     transition: 0.3s;
 }
-.price-item .btn-readmore a img{
+
+/*.price-item .btn-readmore a img{
    width:17px;
-}
+}*/
 
 /*BANG GIA CHI TIET*/
 
@@ -195,7 +196,6 @@ p{
 .vingene-portfolio-fix {
     margin-top:84px;
 }
-
 
 
 

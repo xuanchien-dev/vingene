@@ -9,9 +9,9 @@ $(document).ready(function () {
     $(".price-tabs3").click(function () {
         $(".price-tabs-show3").fadeToggle("slow");
     });
-    $(".price-tabs3").click(function (event) {
+   /* $(".price-tabs3").click(function (event) {
         event.preventDefault();
-        $('.img-block3').css('display','none');
+        $('.box-price-item:before').css('display','none');
     });
     $(".price-tabs1").click(function (event) {
         event.preventDefault();
@@ -20,7 +20,7 @@ $(document).ready(function () {
     $(".price-tabs2").click(function (event) {
         event.preventDefault();
         $('.img-block2').css('display','none');
-    });
+    });*/
 
 
 
