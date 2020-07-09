@@ -222,6 +222,9 @@
     .button-bottom{
         margin-left:15px;
     }
+    .price .col-md-4{
+        height:auto;
+    }
 
 
 
@@ -243,7 +246,12 @@
     }
 
 }
-
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 746px !important;
+        margin: 1.75rem auto;
+    }
+}
 
 
 

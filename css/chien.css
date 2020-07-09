@@ -1234,10 +1234,9 @@ input.btn.vingene-btn.form-f.f-ct::-moz-placeholder {
     height: 100%;
     background: #000;
     z-index: 1062;
-    opacity: 1;
     position: fixed;
     content: '';
-    opacity: .8;
+    opacity: .3;
     z-index: -1;
 }
 

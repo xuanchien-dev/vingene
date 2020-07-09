@@ -13,6 +13,8 @@
 <div id="preloader">
     <div class="loader"></div>
 </div>
+
+
 <header class="header-area wow fadeInDown">
     <div class="main-header-area wow fadeInDown">
         <div class="classy-nav-container breakpoint-off">
@@ -118,19 +120,19 @@
 </header>
 <!-- Header Area End -->
 
-
-<!--POPUP-->
-<!--Modal: modalYT-->
-<div class="modal modal-bgcl fade" id="popupkq-xn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+<div class="modal fade" id="popupkq-xn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="phieuketqua">
+            <div class="phieuketqua" id="">
                 <div class="title-phieuketqua">
                     <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
 
-                    <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
+                    <button type="button" class="btn btn-secondary modal-footer" data-dismiss="modal"><img src="img/imgchange/close.svg"></button>
 
                 </div>
+                <!-- <div class="modal-footer">-->
+
+                <!-- </div>-->
 
                 <div class="content-phieuketqua">
                     <table border="0">
@@ -167,37 +169,41 @@
 
                 </div>
             </div>
+
         </div>
     </div>
-
 </div>
 
-<div class="modal modal-bgcl fade" id="popupdk-dv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="phieuketqua dangki" id="dangkidichvu">
-                <div class="title-phieuketqua title-dangki">
-                    <h3>ĐĂNG KÍ XÉT NGHIỆM</h3>
+<!-- Modal -->
 
-                    <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
+    <div class="modal fade modal-bg" id="popupdk-dv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="phieuketqua dangki" id="dangkidichvu">
 
-                </div>
+                    <div class="title-phieuketqua title-dangki">
+                        <h3>ĐĂNG KÍ XÉT NGHIỆM</h3>
+                    </div>
+                    <!-- <div class="modal-footer">-->
+                    <button type="button" class="btn btn-secondary modal-footer" data-dismiss="modal"><img src="img/imgchange/close.svg"></button>
+                    <!-- </div>-->
 
-                <div class="contact-us form-dangkixetnghiem">
+                    <div class="contact-us form-dangkixetnghiem">
 
-                    <div class="contact-form">
-                        <input type="text" placeholder="Họ và tên" class="full-width">
-                        <input type="text" placeholder="Số điện thoại" class="part-width">
-                        <input type="text" placeholder="Email" class="part-width no-margin">
+                        <div class="contact-form">
+                            <form>
+                            <input type="text" placeholder="Họ và tên" class="full-width">
+                            <input type="text" placeholder="Số điện thoại" class="part-width">
+                            <input type="text" placeholder="Email" class="part-width no-margin">
 
-                        <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
-                            <input class="form-control" readonly="" type="text">
-                            <span class="input-group-addon">
+                            <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                                <input class="form-control" readonly="" type="text">
+                                <span class="input-group-addon">
                          <img src="img/imgchange/calendar.png">
                     </span>
-                        </div>
+                            </div>
 
-                        <div class="fix-icon icon-dangki dangki-kv">
+                            <div class="fix-icon icon-dangki dangki-kv">
                             <span class="icon-select">
                             <select name="choose-service" id="choose-kv" class="choose-service">
                                 <option value="s1" class="choose-option">Khu vực</option>
@@ -207,8 +213,8 @@
                                  <img src="img/imgchange/address.png">
                                 <!--   <i class="fal fa-long-arrow-down"></i>-->
                                 </span>
-                        </div>
-                        <div class="fix-icon">
+                            </div>
+                            <div class="fix-icon">
                             <span class="icon-select">
                             <select name="choose-service" id="choose-service" class="choose-service">
                                 <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
@@ -219,23 +225,25 @@
                                  <img src="img/imgchange/bottom.png">
                                 <!--   <i class="fal fa-long-arrow-down"></i>-->
                                 </span>
+                            </div>
+                            </form>
+
+
                         </div>
 
 
-
                     </div>
-
-
+                    <div class="button-bottom button-dangkixetnghiem">
+                        <button type="button" class="btn btn-service">Đăng kí<img src="img/imgchange/guidi.png"> </button>
+                        <button type="button" class="btn btn-clear">Làm lại<img src="img/imgchange/lamlai.png"></button>
+                    </div>
                 </div>
-                <div class="button-bottom button-dangkixetnghiem">
-                    <button type="button" class="btn btn-service">Đăng kí<img src="img/imgchange/guidi.png"> </button>
-                    <button type="button" class="btn btn-clear">Làm lại<img src="img/imgchange/lamlai.png"></button>
-                </div>
+
             </div>
         </div>
     </div>
 
-</div>
+
 
 
 
@@ -516,7 +524,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row row-eq-height">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="box-slide owl-carousel owl-theme">
                     <div class="box-slide-l">
@@ -545,7 +553,7 @@
                         <div class="desc-slide-address">
                             <p>
                                 <span>Địa chỉ:</span>
-                                <span>Số 16, tổ 1, Phường Long Biên, Quận Long Biên, Hà Nội</span>
+                                <span>Số 50, Quận 7, TP HCMSố 50, Quận 7, TP HCM Số 50, Quận 7, TP HCM<Số 50, Quận 7, TP HCM/span>
                             </p>
                             <p>
                                 <span>Email:</span>

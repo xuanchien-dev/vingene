@@ -34,13 +34,13 @@ $('.dc-top2').click(function(event) {
 
 $('.button-close').click(function(event) {
     event.preventDefault();
-    $('.phieuketqua').css('display', 'none');
+    $('#popupkq-xn').css('display', 'none');
 });
 
 
 $('.button-close').click(function(event) {
     event.preventDefault();
-    $('#dangkidichvu').css('display', 'none');
+    $('#popupdk-dv').css('display', 'none');
 });
 
 

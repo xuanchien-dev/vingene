@@ -53,6 +53,7 @@ p{
 }
 .price-detail .box-price-item h4{
     color: #056839 !important;
+
 }
 .price-detail .price-tabs-show1 h4,.price-detail .price-tabs-show2 h4,.price-detail .price-tabs-show3 h4{
     color: #2D2D2D !important;
@@ -72,6 +73,8 @@ p{
 }
 .price-item h4{
   font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .price-item p{

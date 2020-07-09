@@ -20,8 +20,11 @@
 .service-advisory .service-advisory-button{
     margin-top:30px;
 }
-.service-advisory .service-advisory-button .btn-ad-service img{
-    width:20px;
+.service-advisory .service-advisory-button .btn-ad-service:after{
+    content: url(../../img/imgchange/calendarfff.png);
+    position: absolute;
+    left: 15px;
+    top: 5px;
 }
 .service-advisory .service-advisory-button .btn-ad-service{
     background-color: #056839;
@@ -30,11 +33,12 @@
     background-size: cover;
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-left: 25px;
+    padding-left: 57px;
     padding-right: 25px;
     border-radius: 100px;
     background-repeat: no-repeat;
     font-size: 15px;
+    position: relative;
 }
 
 /* THONG TIN VE VINGENE */

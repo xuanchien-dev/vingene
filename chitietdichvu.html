@@ -13,6 +13,8 @@
 <div id="preloader">
     <div class="loader"></div>
 </div>
+
+
 <header class="header-area wow fadeInDown">
     <div class="main-header-area wow fadeInDown">
         <div class="classy-nav-container breakpoint-off">
@@ -31,7 +33,7 @@
 
                             <div class="d-none d-md-block">
                                 <div class="kq-xn">
-                                    <a href="" title="" class="btn dc-top2" data-toggle="modal" data-target="#popupkq-xn">Kết quả xét nhiệm</a>
+                                    <a href="" title="" class="btn dc-top2" data-toggle="modal" data-target="#popupkq-xn" >Kết quả xét nhiệm</a>
                                 </div>
                             </div>
 
@@ -117,20 +119,19 @@
     </div>
 </header>
 <!-- Header Area End -->
-
-
-<!--POPUP-->
-<!--Modal: modalYT-->
-<div class="modal modal-bgcl fade" id="popupkq-xn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+<div class="modal fade" id="popupkq-xn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="phieuketqua">
+            <div class="phieuketqua" id="">
                 <div class="title-phieuketqua">
                     <h3>PHIẾU KẾT QUẢ XÉT NGHIỆM</h3>
 
-                    <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
+                    <button type="button" class="btn btn-secondary modal-footer" data-dismiss="modal"><img src="img/imgchange/close.svg"></button>
 
                 </div>
+                <!-- <div class="modal-footer">-->
+
+                <!-- </div>-->
 
                 <div class="content-phieuketqua">
                     <table border="0">
@@ -167,21 +168,22 @@
 
                 </div>
             </div>
+
         </div>
     </div>
-
 </div>
-
-<div class="modal modal-bgcl fade" id="popupdk-dv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+<!-- Modal -->
+<div class="modal fade" id="popupdk-dv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="phieuketqua dangki" id="dangkidichvu">
+
                 <div class="title-phieuketqua title-dangki">
                     <h3>ĐĂNG KÍ XÉT NGHIỆM</h3>
-
-                    <button type="button" class="button-close"><img src="img/imgchange/close.svg"> </button>
-
                 </div>
+                <!-- <div class="modal-footer">-->
+                <button type="button" class="btn btn-secondary modal-footer" data-dismiss="modal"><img src="img/imgchange/close.svg"></button>
+                <!-- </div>-->
 
                 <div class="contact-us form-dangkixetnghiem">
 
@@ -232,9 +234,9 @@
                     <button type="button" class="btn btn-clear">Làm lại<img src="img/imgchange/lamlai.png"></button>
                 </div>
             </div>
+
         </div>
     </div>
-
 </div>
 
 
@@ -328,7 +330,7 @@
                 <img src="img/imgchange/post1.png">
             </div>
             <div class="col-md-12 text-center service-advisory-button">
-                <button type="button" class="btn btn-ad-service"><img src="img/imgchange/calendar.svg"> Đặt lịch tư vấn</button>
+                <button type="button" class="btn btn-ad-service"> Đặt lịch tư vấn</button>
             </div>
         </div>
     </div>

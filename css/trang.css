@@ -14,6 +14,17 @@
     overflow: hidden;
     box-shadow: 0px 3px 15px #00000029;
     background-color:#fff;
+    position: relative;
+}
+.phieuketqua .modal-footer{
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    background-color: transparent;
+    border: none;
+}
+.phieuketqua .modal-footer img{
+    width:16px;
 }
 .title-phieuketqua{
     display:flex;
@@ -331,19 +342,11 @@
     color: #6D6D6D;
     font-size: 14px;
 }
+/*
 .modal::before{
     background: transparent !important;
-}
-#popupkq-xn{
-    dislay:flex !important;
-}
-.modal-dialog{
-    dislay:flex;
-}
+}*/
 
-.modal-dialog .bg-color-dangki{
-    dislay:flex;
-}
 
 .maps{
     height:451px;
@@ -395,13 +398,49 @@
     float: left;
     width: 100%;
 }
+.price .price-item .box-price-item ul li{
+    color: #056839;
+    font-size: 14px;
+    font-family: light;
+    font-weight: 600;
+    position: relative;
+    padding-left: 20px;
+}
+.price .price-item .box-price-item ul li:after{
+    content: url(../img/imgchange/tick.png);
+    left: 0;
+    position: absolute;
+}
+
+.price .price-item .box-price-item ul:last-child li:after{
+    content: url(../img/imgchange/heart.png);
+    left: 0;
+    position: absolute;
+}
+.price .col-md-4{
+    height:905px;
+}
 
 
 
 
+/*
 
+.modal-open .modal{
+    display:flex !important;
+}
 
+.modal-dialog{
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+.modal-content{
+    background:transparent;
+    border:none;
+}
 
+*/
 
 
 
