@@ -389,11 +389,11 @@
     position: absolute;
     right: 14px;
     top: 6px;
-}
+}/*
 .modal-content{
     border-radius: 50px;
     width:70%;
-}
+}*/
 .pagination-gt{
     float: left;
     width: 100%;
@@ -447,12 +447,13 @@
     width: 100%;
     display: flex;
 }
-.modal-content{
+
+*/
+
+.modal-bg-fix .modal-content{
     background:transparent;
     border:none;
 }
-
-*/
 .box-slide1{
     display: flex;
     justify-content: space-between;
