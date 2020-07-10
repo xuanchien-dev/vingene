@@ -153,6 +153,27 @@
 .price-detail .price-content ul li{
    width:50%;
     float:left;
+    position: relative;
+}
+.price-tabs-show1 .price-content ul li, .price-tabs-show2 .price-content ul li, .price-tabs-show3 .price-content ul li{
+    position: relative;
+    padding-left:15px;
+}
+.price-tabs-show1 .price-content ul li img, .price-tabs-show2 .price-content ul li img, .price-tabs-show3 .price-content ul li img{
+   display: none;
+}
+
+.price-tabs-show1 .price-content ul li:before, .price-tabs-show2 .price-content ul li:before, .price-tabs-show3 .price-content ul li:before{
+    position: absolute;
+    content: url("../../img/imgchange/tick.png");
+    left:0;
+
+}
+.price-tabs-show1 .price-content ul:last-child li:before, .price-tabs-show2 .price-content ul:last-child li:before, .price-tabs-show3 .price-content ul:last-child li:before{
+    position: absolute;
+    content: url("../../img/imgchange/heart.png");
+    left:0;
+
 }
 .contact-us-fix .btn-service img{
     display: none;
@@ -180,12 +201,39 @@
     right: 16px;
     top: 11px;
 }
-.post-price .price-content ul li{
+.price-tabs .price-content ul li{
     width:100%;
 }
+.post-price .price-content ul li{
+    width:50% !important;
+    float:left;
+}
+.price-tabs-show1 .price-content ul li, .price-tabs-show2 .price-content ul li, .price-tabs-show3 .price-content ul li{
+ width:100%;
+}
 
+.price .price-item .box-price-item ul li{
+    color: #056839;
+    font-size: 14px;
+    font-family: light;
+    font-weight: 600;
+    position: relative;
+    padding-left: 20px;
+}
+.price .price-item .box-price-item ul li:after{
+    content: url(../../img/imgchange/tick.png);
+    left: 0;
+    position: absolute;
+}
 
-
+.price .price-item .box-price-item ul:last-child li:after{
+    content: url(../../img/imgchange/heart.png);
+    left: 0;
+    position: absolute;
+}
+.price .col-md-4{
+    height:905px;
+}
 
 
 
@@ -216,8 +264,15 @@
         border: 1px solid #CFCFCF;
     }
     .price .col-md-4{
-        height:auto;
+        height:auto !important;
     }
+    .out-address-3 .box-slide-l .item-box{
+        padding-left:15px !important;
+    }
+    .document-service .do-items .document-item ul li{
+        width:100%;
+    }
+
 }
 
 
