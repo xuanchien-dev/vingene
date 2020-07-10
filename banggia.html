@@ -173,7 +173,7 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="popupdk-dv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal fade modal-bg" id="popupdk-dv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-bg-fix" role="document">
         <div class="modal-content">
             <div class="phieuketqua dangki" id="dangkidichvu">
@@ -188,41 +188,37 @@
                 <div class="contact-us form-dangkixetnghiem">
 
                     <div class="contact-form">
-                        <input type="text" placeholder="Họ và tên" class="full-width">
-                        <input type="text" placeholder="Số điện thoại" class="part-width">
-                        <input type="text" placeholder="Email" class="part-width no-margin">
+                        <form>
+                            <input type="text" placeholder="Họ và tên" class="full-width">
+                            <input type="text" placeholder="Số điện thoại" class="part-width">
+                            <input type="text" placeholder="Email" class="part-width no-margin">
 
-                        <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
-                            <input class="form-control" readonly="" type="text">
-                            <span class="input-group-addon">
-                         <img src="img/imgchange/calendar.png">
-                    </span>
-                        </div>
+                            <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                                <input class="form-control" readonly="" type="text">
+                                <span class="input-group-addon">
+                                 </span>
+                            </div>
 
-                        <div class="fix-icon icon-dangki dangki-kv">
-                            <span class="icon-select">
-                            <select name="choose-service" id="choose-kv" class="choose-service">
-                                <option value="s1" class="choose-option">Khu vực</option>
-                                <option value="s2" class="choose-option">Hà Nội</option>
-                                <option value="s3" class="choose-option">Đà Nẵng</option>
-                            </select>
-                                 <img src="img/imgchange/address.png">
-                                <!--   <i class="fal fa-long-arrow-down"></i>-->
+                            <div class="fix-icon icon-dangki dangki-kv">
+                            <span class="icon-select sl-kv">
+                                <select name="choose-service" id="choose-kv" class="choose-service">
+                                    <option value="s1" class="choose-option">Khu vực</option>
+                                    <option value="s2" class="choose-option">Hà Nội</option>
+                                    <option value="s3" class="choose-option">Đà Nẵng</option>
+                                </select>
                                 </span>
-                        </div>
-                        <div class="fix-icon">
-                            <span class="icon-select">
+                            </div>
+                            <div class="fix-icon">
+                            <span class="icon-select sl-sv">
                             <select name="choose-service" id="choose-service" class="choose-service">
                                 <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
                                 <option value="s2" class="choose-option">Gói 01</option>
                                 <option value="s3" class="choose-option">Gói Plus</option>
                                 <option value="s4" class="choose-option">Gói Pro</option>
                             </select>
-                                 <img src="img/imgchange/bottom.png">
-                                <!--   <i class="fal fa-long-arrow-down"></i>-->
                                 </span>
-                        </div>
-
+                            </div>
+                        </form>
 
 
                     </div>
@@ -307,7 +303,7 @@
                     <div class="box-price-item">
                         <h4>VINGENE 01</h4>
                         <p><span>9.5</span>tr/người</p>
-                        <button type="button" class="btn btn-service">ĐĂNG KÍ NGAY</button>
+                        <a class="btn btn-service">ĐĂNG KÍ NGAY</a>
                         <h4>PHÁT HIỆN CÁC HỘI CHỨNG</h4>
 
                         <ul>
@@ -331,9 +327,8 @@
 
                         </ul>
                     </div>
-
                     <div class="btn-readmore">
-                        <a href="#">Xem chi tiết <img src="img/imgchange/right.svg"></a>
+                        <a href="#" class="detail-icon">Xem chi tiết </a>
                     </div>
                 </div>
 
@@ -344,7 +339,7 @@
                     <div class="box-price-item">
                         <h4>VINGENE PLUS</h4>
                         <p><span>13.5</span>tr/người</p>
-                        <button type="button" class="btn btn-service">ĐĂNG KÍ NGAY</button>
+                        <a class="btn btn-service">ĐĂNG KÍ NGAY</a>
                         <h4>SÀNG LỌC THÊM CÁC HỘI CHỨNG</h4>
                         <ul>
                             <li>Lorem Ipsum is simply </li>
@@ -373,7 +368,7 @@
                     </div>
 
                     <div class="btn-readmore">
-                        <a href="#">Xem chi tiết <img src="img/imgchange/right.svg"></a>
+                        <a href="#" class="detail-icon">Xem chi tiết </a>
                     </div>
                 </div>
 
@@ -384,7 +379,7 @@
                     <div class="box-price-item">
                         <h4>VINGENE PRO+</h4>
                         <p><span>25.5</span>tr/người</p>
-                        <button type="button" class="btn btn-service">ĐĂNG KÍ NGAY</button>
+                        <a class="btn btn-service">ĐĂNG KÍ NGAY</a>
                         <h4>PHÁT HIỆN CÁC HỘI CHỨNG</h4>
                         <ul>
                             <li>Lorem Ipsum is simply </li>
@@ -418,7 +413,7 @@
                     </div>
 
                     <div class="btn-readmore">
-                        <a href="#">Xem chi tiết <img src="img/imgchange/right.svg"></a>
+                        <a href="#" class="detail-icon">Xem chi tiết </a>
                     </div>
                 </div>
 

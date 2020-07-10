@@ -173,7 +173,8 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="popupdk-dv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+
+<div class="modal fade modal-bg" id="popupdk-dv" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-bg-fix" role="document">
         <div class="modal-content">
             <div class="phieuketqua dangki" id="dangkidichvu">
@@ -188,41 +189,37 @@
                 <div class="contact-us form-dangkixetnghiem">
 
                     <div class="contact-form">
-                        <input type="text" placeholder="Họ và tên" class="full-width">
-                        <input type="text" placeholder="Số điện thoại" class="part-width">
-                        <input type="text" placeholder="Email" class="part-width no-margin">
+                        <form>
+                            <input type="text" placeholder="Họ và tên" class="full-width">
+                            <input type="text" placeholder="Số điện thoại" class="part-width">
+                            <input type="text" placeholder="Email" class="part-width no-margin">
 
-                        <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
-                            <input class="form-control" readonly="" type="text">
-                            <span class="input-group-addon">
-                         <img src="img/imgchange/calendar.png">
-                    </span>
-                        </div>
+                            <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                                <input class="form-control" readonly="" type="text">
+                                <span class="input-group-addon">
+                                 </span>
+                            </div>
 
-                        <div class="fix-icon icon-dangki dangki-kv">
-                            <span class="icon-select">
-                            <select name="choose-service" id="choose-kv" class="choose-service">
-                                <option value="s1" class="choose-option">Khu vực</option>
-                                <option value="s2" class="choose-option">Hà Nội</option>
-                                <option value="s3" class="choose-option">Đà Nẵng</option>
-                            </select>
-                                 <img src="img/imgchange/address.png">
-                                <!--   <i class="fal fa-long-arrow-down"></i>-->
+                            <div class="fix-icon icon-dangki dangki-kv">
+                            <span class="icon-select sl-kv">
+                                <select name="choose-service" id="choose-kv" class="choose-service">
+                                    <option value="s1" class="choose-option">Khu vực</option>
+                                    <option value="s2" class="choose-option">Hà Nội</option>
+                                    <option value="s3" class="choose-option">Đà Nẵng</option>
+                                </select>
                                 </span>
-                        </div>
-                        <div class="fix-icon">
-                            <span class="icon-select">
+                            </div>
+                            <div class="fix-icon">
+                            <span class="icon-select sl-sv">
                             <select name="choose-service" id="choose-service" class="choose-service">
                                 <option value="s1" class="choose-option">Gói xét nghiệm bạn quan tâm</option>
                                 <option value="s2" class="choose-option">Gói 01</option>
                                 <option value="s3" class="choose-option">Gói Plus</option>
                                 <option value="s4" class="choose-option">Gói Pro</option>
                             </select>
-                                 <img src="img/imgchange/bottom.png">
-                                <!--   <i class="fal fa-long-arrow-down"></i>-->
                                 </span>
-                        </div>
-
+                            </div>
+                        </form>
 
 
                     </div>
@@ -238,6 +235,7 @@
         </div>
     </div>
 </div>
+
 
 
 
@@ -330,7 +328,7 @@
                 <img src="img/imgchange/post1.png">
             </div>
             <div class="col-md-12 text-center service-advisory-button">
-                <button type="button" class="btn btn-ad-service"> Đặt lịch tư vấn</button>
+                <a class="btn btn-ad-service"> Đặt lịch tư vấn</a>
             </div>
         </div>
     </div>
@@ -672,19 +670,19 @@
             <div class="col-md-12 do-items">
                 <div class="col-md-6 document-item">
                     <ul>
-                        <li><img src="img/imgchange/pdf.svg"><a href="">Mẫu yêu cầu xét nghiệm</a></li>
-                        <li><img src="img/imgchange/pdf.svg"><a href="">Quy trình lấy mẫu xét nghiệm</a></li>
-                        <li><img src="img/imgchange/pdf.svg"><a href="">Fact sheet về các loại test</a></li>
-                        <li><img src="img/imgchange/pdf.svg"><a href="">Hướng dẫn lấy mẫu</a></li>
-                        <li><img src="img/imgchange/pdf.svg"><a href="">Tờ thông tin Trisomy hiếm</a></li>
+                        <li><a href="">Mẫu yêu cầu xét nghiệm</a></li>
+                        <li><a href="">Quy trình lấy mẫu xét nghiệm</a></li>
+                        <li><a href="">Fact sheet về các loại test</a></li>
+                        <li><a href="">Hướng dẫn lấy mẫu</a></li>
+                        <li><a href="">Tờ thông tin Trisomy hiếm</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 document-item">
                     <ul>
-                        <li><img src="img/imgchange/pdf.svg"><a href="">Tờ thông tin XYY</a></li>
-                        <li><img src="img/imgchange/pdf.svg"><a href="">Tờ thông tin XXY</a></li>
-                        <li><img src="img/imgchange/pdf.svg"><a href="">Tờ thông tin Triple X</a></li>
-                        <li><img src="img/imgchange/pdf.svg"><a href="">Tờ thông tin về sự mất cân bằng nhiễm sắc thể</a></li>
+                        <li><a href="">Tờ thông tin XYY</a></li>
+                        <li><a href="">Tờ thông tin XXY</a></li>
+                        <li><a href="">Tờ thông tin Triple X</a></li>
+                        <li><a href="">Tờ thông tin về sự mất cân bằng nhiễm sắc thể</a></li>
 
                     </ul>
                 </div>

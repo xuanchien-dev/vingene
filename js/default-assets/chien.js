@@ -226,7 +226,7 @@ $('.box-slide-ctkt').owlCarousel({
       autoplay:true,
       // navText: ["<img src='img/left-arow.png'>","<img src='img/right-arow.png'>"],
       nav:true,
-      dots:true,
+      dots:none,
       autoplayHoverPause: true,
       autoplaySpeed: 700,
       // animateOut: 'fadeOut',

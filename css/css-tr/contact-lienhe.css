@@ -89,23 +89,7 @@
 .contact-us .choose-service .choose-option{
     margin-bottom: 15px;
 }
-.contact-us .contact-form .choose-service{
-    position: relative;
-}
-.contact-us .contact-form .choose-service:before{
-    content: url("../../img/imgchange/tick.png");
-    position: absolute;
-}
-/*
-.choose-service:before{
-    content: '\f175';
-    font-family: FontAwesome;
-}
-.contact-form i:before{
-    content: '\f175';
-    font-family: FontAwesome;
-    font-style: initial;
-}*/
+
 .contact-us .address-box{
     background-image: url('../../img/imgchange/contactus.png');
     background-size: cover;
@@ -134,14 +118,9 @@
     float:right;
     padding-left:15px;
 }
-/*
-.contact-right{
-    width: 100%;
-    position: absolute;
-    right: 0;
-}*/
 .contact-us .container-fluid{
     padding:0;
+    width: 98% !important;
 }
 .contact-us .title-color h2{
     color:#fff;

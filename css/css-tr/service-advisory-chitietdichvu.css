@@ -20,26 +20,7 @@
 .service-advisory .service-advisory-button{
     margin-top:30px;
 }
-.service-advisory .service-advisory-button .btn-ad-service:after{
-    content: url(../../img/imgchange/calendarfff.png);
-    position: absolute;
-    left: 15px;
-    top: 5px;
-}
-.service-advisory .service-advisory-button .btn-ad-service{
-    background-color: #056839;
-    color: #fff;
-    background-image: url(../../img/imgchange/bgbutton.png);
-    background-size: cover;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 57px;
-    padding-right: 25px;
-    border-radius: 100px;
-    background-repeat: no-repeat;
-    font-size: 15px;
-    position: relative;
-}
+
 
 /* THONG TIN VE VINGENE */
 .info-vingene{
@@ -151,14 +132,12 @@ z-index: -1;
 .document-service .do-items .document-item{
     float:left;
 }
+/*
 .document-service .do-items .document-item ul li img{
     width: 24px;
     margin-right: 30px;
-}
-.document-service .do-items .document-item ul li{
-    list-style-type: none;
-    margin-bottom: 20px;
-}
+}*/
+
 .document-service .do-items {
     border-top: 4px solid #22744B;
     padding-top: 30px;
@@ -174,7 +153,6 @@ z-index: -1;
     transition: 0.8s;
     border-bottom: 1px solid #22744b;
 }
-
 
 
 
