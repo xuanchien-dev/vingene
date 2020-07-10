@@ -89,13 +89,7 @@
 .contact-us .choose-service .choose-option{
     margin-bottom: 15px;
 }
-.contact-us .contact-form .choose-service{
-    position: relative;
-}
-.contact-us .contact-form .choose-service:before{
-    content: url("../../img/imgchange/tick.png");
-    position: absolute;
-}
+
 /*
 .choose-service:before{
     content: '\f175';

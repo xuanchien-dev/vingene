@@ -112,6 +112,109 @@
     content: url("../../img/imgchange/rightwhite.png");
     right:15px;
 }
+.contact-us .contact-form .choose-service{
+    position: relative;
+}
+.contact-us .contact-form .choose-service:before{
+    content: url("../../img/imgchange/tick.png");
+    position: absolute;
+}
+.ad-rights p:first-child{
+    color: #056839;
+    font-weight: 600;
+}
+.ad-rights p{
+    font-weight: 600;
+}
+.ad-lefts p{
+    font-weight: 600;
+}
+.why-choose-us-area .section-heading-why ul li a{
+    font-family: light;
+    font-weight: 600;
+    color: #6D6D6D;
+}
+.why-choose-us-area .section-heading-why ul li a i{
+   margin-right:15px;
+}
+.why-choose-us-area .section-heading-why ul li a i:before{
+    color: #cee6d3;
+}
+.document-service .do-items .document-item ul li{
+    width: 50%;
+    float: left;
+}
+.post-price .box-price-item h4 img{
+    display:none !important;
+}
+.price-detail .price-content{
+    display:inline-block;
+}
+.price-detail .price-content ul li{
+   width:50%;
+    float:left;
+}
+.contact-us-fix .btn-service img{
+    display: none;
+}
+.contact-us-fix .btn-service{
+    position: relative;
+    padding: 7px 50px 7px 20px !important;
+}
+.contact-us-fix .btn-service:before{
+    position: absolute;
+    content: url(../../img/imgchange/guidi.png);
+    right: 16px;
+    top: 11px;
+}
+.contact-us .btn-service img{
+    display: none;
+}
+.contact-us .btn-service{
+    position: relative;
+    padding: 7px 50px 7px 20px !important;
+}
+.contact-us .btn-service:before{
+    position: absolute;
+    content: url(../../img/imgchange/guidi.png);
+    right: 16px;
+    top: 11px;
+}
+
+@media screen and (max-width: 576px) {
+    .address-diachi .box-slide-l .item-box{
+        padding-left:15px;
+    }
+    .address-diachi .box-slide-l .item-box .desc-slide-address{
+        margin-left:0;
+    }
+    .row-dcxn{
+        display:initial;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
