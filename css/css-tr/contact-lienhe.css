@@ -90,16 +90,6 @@
     margin-bottom: 15px;
 }
 
-/*
-.choose-service:before{
-    content: '\f175';
-    font-family: FontAwesome;
-}
-.contact-form i:before{
-    content: '\f175';
-    font-family: FontAwesome;
-    font-style: initial;
-}*/
 .contact-us .address-box{
     background-image: url('../../img/imgchange/contactus.png');
     background-size: cover;

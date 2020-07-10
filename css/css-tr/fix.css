@@ -215,6 +215,9 @@
         border-radius: 8px;
         border: 1px solid #CFCFCF;
     }
+    .price .col-md-4{
+        height:auto;
+    }
 }
 
 
