@@ -107,10 +107,10 @@ p{
 .price-content ul{
     padding-left:0;
 }
-.price-content .ul-left{
+/*.price-content .ul-left{
     float:left;
     margin-right:85px;
-}
+}*/
 .price-content ul li{
     font-size: 14px;
     color: #056839;
