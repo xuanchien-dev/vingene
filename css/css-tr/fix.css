@@ -180,6 +180,25 @@
     right: 16px;
     top: 11px;
 }
+.post-price .price-content ul li{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 576px) {
     .address-diachi .box-slide-l .item-box{
@@ -191,9 +210,33 @@
     .row-dcxn{
         display:initial;
     }
+    .box-address-item{
+        margin: 15px;
+        border-radius: 8px;
+        border: 1px solid #CFCFCF;
+    }
 }
 
 
+@media screen and (min-width: 1200px){
+    .row-dcxn {
+        display: grid;
+        grid-template-columns: calc(50% - (30px * 1/2)) calc(50% - (30px * 1/2));
+        grid-column-gap: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 30px;
+    }
+    .box-address-item {
+        flex: 1 0;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border: 1px solid #CFCFCF;
+        border-radius: 8px;
+    }
+
+
+}
 
 
 

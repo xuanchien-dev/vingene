@@ -43,6 +43,11 @@ $('.button-close').click(function(event) {
     $('#popupdk-dv').css('display', 'none');
 });
 
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p:first").addClass("intro");
+    });
+});
 
 
 

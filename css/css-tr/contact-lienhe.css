@@ -128,14 +128,9 @@
     float:right;
     padding-left:15px;
 }
-/*
-.contact-right{
-    width: 100%;
-    position: absolute;
-    right: 0;
-}*/
 .contact-us .container-fluid{
     padding:0;
+    width: 98% !important;
 }
 .contact-us .title-color h2{
     color:#fff;
