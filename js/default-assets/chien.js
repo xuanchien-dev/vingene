@@ -263,3 +263,4 @@ $('.box-slide-ctkt').owlCarousel({
     $('#back-top').fadeIn(500);
     }
 });
+

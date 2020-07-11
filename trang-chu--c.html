@@ -1092,28 +1092,7 @@
                 <a href="">Kết quả xét nghiệm</a>
             </div>
         </div>
-        <script type="text/javascript">
-           $("#nn1").select2({
-            templateResult: function (idioma) {
-                var $span = $("<span><img src='img/" + idioma.id + ".png'/> " + idioma.text + "</span>");
-                return $span;
-            },
-            templateSelection: function (idioma) {
-                var $span = $("<span><img src='img/" + idioma.id + ".png'/> " + idioma.text + "</span>");
-                return $span;
-            }
-        });
-            $("#nn2").select2({
-            templateResult: function (idioma) {
-                var $span = $("<span><img src='img/" + idioma.id + ".png'/> " + idioma.text + "</span>");
-                return $span;
-            },
-            templateSelection: function (idioma) {
-                var $span = $("<span><img src='img/" + idioma.id + ".png'/> " + idioma.text + "</span>");
-                return $span;
-            }
-        });
-    </script>
+         <script src="js/default-assets/select-nn.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
