@@ -1,5 +1,6 @@
 
 /* Import Fonts & All CSS */
+@import url(css/select2.css);
 @import url(css/bootstrap.min.css);
 @import url(css/animate.css);
 @import url(css/default-assets/header-foote.css);

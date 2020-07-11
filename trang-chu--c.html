@@ -7,9 +7,8 @@
         <meta name="keywords" content="" />
         <title>Vingene</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+          <script src="js/js-select2.js"></script>
+        <script src="js/select2.min.js"></script>
     </head>
 
     <body>
@@ -71,13 +70,12 @@
                         <nav class="classy-navbar justify-content-between" id="vingeneNav">
                             <a class="nav-brand" href="index.html"><img src="./img/logo.png" alt="" /></a>
                             <div class="d-mb-block">
-                               <img src="img/vn.png" alt="" />
-                               <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
-                                   <select id="cmbIdioma" style="width: 200px;">
-                                    <option value="Spain" selected>VN</option>
-                                    <option value="United_Kingdom">EL</option>
-                                </select>  
-                            </form>
+                              <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
+                               <select id="cmbIdioma" style="width: 60px;">
+                                <option value="vn" selected>VN</option>
+                                <option value="us">EL</option>
+                            </select>      
+                        </form>
                         </div>
                             <div class="classy-navbar-toggler">
                                 <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -1107,7 +1105,6 @@
             }
         });
     </script>
-       
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
