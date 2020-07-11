@@ -58,9 +58,9 @@
                                    <button id="req-transfer-currency" class="btn-select" value=""></button>
                                     <div class="d-mb-none" style="display: flex;" >
                                        <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
-                                         <select id="cmbIdioma" style="width: 200px;">
-                                            <option value="Spain" selected>VN</option>
-                                            <option value="United_Kingdom">EL</option>
+                                         <select id="cmbIdioma" style="width: 60px;">
+                                            <option value="vn" selected>VN</option>
+                                            <option value="us">EL</option>
                                         </select>      
                                       </form>
                                     </div>
@@ -1098,11 +1098,11 @@
         <script type="text/javascript">
            $("#cmbIdioma").select2({
             templateResult: function (idioma) {
-                var $span = $("<span><img src='https://www.free-country-flags.com/countries/"+idioma.id+"/1/tiny/" + idioma.id + ".png'/> " + idioma.text + "</span>");
+                var $span = $("<span><img src='img/" + idioma.id + ".png'/> " + idioma.text + "</span>");
                 return $span;
             },
             templateSelection: function (idioma) {
-                var $span = $("<span><img src='https://www.free-country-flags.com/countries/"+idioma.id+"/1/tiny/" + idioma.id + ".png'/> " + idioma.text + "</span>");
+                var $span = $("<span><img src='img/" + idioma.id + ".png'/> " + idioma.text + "</span>");
                 return $span;
             }
         });
