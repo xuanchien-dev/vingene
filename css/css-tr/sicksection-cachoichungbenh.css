@@ -22,7 +22,7 @@
 .sick-service .box-item .box-item-default:hover{
     box-shadow: 0px 3px 15px #00000026;
     transition: 0.3s;
-    border:none;
+    border:transparent;
 }
 .sick-service .box-item .box-item-default:hover .content-box-default{
   display:none;
