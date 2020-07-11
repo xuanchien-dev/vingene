@@ -56,7 +56,7 @@
   
                                     <div class="d-mb-none" style="display: flex;" >
                                        <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
-                                         <select id="cmbIdioma" style="width: 60px;">
+                                         <select id="nn1" style="width: 60px;">
                                             <option value="vn" selected>VN</option>
                                             <option value="us">EL</option>
                                         </select>      
@@ -69,12 +69,12 @@
                         <nav class="classy-navbar justify-content-between" id="vingeneNav">
                             <a class="nav-brand" href="index.html"><img src="./img/logo.png" alt="" /></a>
                             <div class="d-mb-block">
-                              <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
-                               <select id="cmbIdioma" style="width: 60px;">
-                                <option value="vn" selected>VN</option>
-                                <option value="us">EL</option>
-                            </select>      
-                        </form>
+                                <form action="" method="post" enctype="multipart/form-data" name="frmdata" class="f-language">
+                                         <select id="nn2" style="width: 60px;">
+                                            <option value="vn" selected>VN</option>
+                                            <option value="us">EL</option>
+                                        </select>      
+                                      </form>
                         </div>
                             <div class="classy-navbar-toggler">
                                 <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -1093,7 +1093,17 @@
             </div>
         </div>
         <script type="text/javascript">
-           $("#cmbIdioma").select2({
+           $("#nn1").select2({
+            templateResult: function (idioma) {
+                var $span = $("<span><img src='img/" + idioma.id + ".png'/> " + idioma.text + "</span>");
+                return $span;
+            },
+            templateSelection: function (idioma) {
+                var $span = $("<span><img src='img/" + idioma.id + ".png'/> " + idioma.text + "</span>");
+                return $span;
+            }
+        });
+            $("#nn2").select2({
             templateResult: function (idioma) {
                 var $span = $("<span><img src='img/" + idioma.id + ".png'/> " + idioma.text + "</span>");
                 return $span;
